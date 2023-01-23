@@ -1,0 +1,17 @@
+.Nav {
+    text-align: center;
+    background-color: #8A817C;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.NavLink {
+    color: #463F3A;
+    font-size: calc(10px + 2vmin);
+    margin-left:50px;
+    margin-right:50px;
+}

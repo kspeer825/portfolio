@@ -1,0 +1,30 @@
+.Grid {
+    &_container {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #BCB8B1;
+    }
+
+    &_item {
+	display: block
+    }
+
+    @for $i from 1 to 13 {
+	&_cols_#{$i} {
+	    flex-basis: $i/12 * 100%;
+	}
+
+    }
+
+    &_spacing_sm > &_item {
+	padding: 8px;
+    }
+
+    &_spacing_md > &_item {
+	padding: 16px;
+    }
+
+    &_spacing_lg > &_item {
+	padding: 24px;
+    }
+}
