@@ -7,7 +7,8 @@ const ProjectBox: FunctionComponent<{
   title: string;
   tools: string;
   description: string;
-}> = ({ title, tools, description }) => {
+  impact: string;
+}> = ({ title, tools, description, impact }) => {
   return (
     <>
       <Box color='dark_gray' corners='roundest'>
@@ -23,6 +24,11 @@ const ProjectBox: FunctionComponent<{
           Description:
           <br />
           {description}
+          <br />
+          <br />
+          Impact:
+          <br />
+          {impact}
         </p>
       </Box>
       <br />
