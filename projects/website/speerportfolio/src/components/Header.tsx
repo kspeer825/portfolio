@@ -1,7 +1,5 @@
 import React from 'react';
-//import styles from './Header.module.scss'
 import '../App.css';
-import Grid from '../components/Grid'
 
 
 function Header() {

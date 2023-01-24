@@ -25,7 +25,7 @@ function AboutMe() {
           </Box>
         </Grid>
         <Grid item cols={4}>
-          <img src={photo} className="App-photo" alt="Profile Photo" />
+          <img src={photo} className="App-photo" alt="Headshot" />
         </Grid>
         <Grid item cols={2} />
       </Grid>
