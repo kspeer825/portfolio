@@ -26,50 +26,53 @@ function HomePage() {
 
       <Grid container spacing="md">
         <Grid item cols={2} />
-        <Grid item cols={4}>
-          <Box color='blue' corners='roundest'>
-            <h2> Cloud Infrastructure </h2>
-            <p> AWS, Docker, Terraform, Go </p>
-          </Box>
-        </Grid>
-        <Grid item cols={4}>
-          <Box color='gray' corners='rounder'>
-            <h2> Programming </h2>
-            <p> Python, Clojure, Bash </p>
-          </Box>
-        </Grid>
-      </Grid>
+        <Grid item cols={8}>
 
-      <Grid container spacing="md">
-        <Grid item cols={2} />
-        <Grid item cols={4}>
-          <Box color='gray' corners='rounder'>
-            <h2> Continuous Integration & Delivery </h2>
-            <p> CircleCI, Jenkins, Github Actions </p>
-          </Box>
-        </Grid>
-        <Grid item cols={4}>
-          <Box color='blue' corners='roundest'>
-            <h2> Test Automation </h2>
-            <p> Python, Selenium, Gridlastic, Terratest </p>
-          </Box>
-        </Grid>
-        <Grid item cols={2} />
-      </Grid>
+          <Grid container spacing="md">
+            <Grid item cols={6}>
+              <Box color='blue' corners='roundest'>
+                <h2> Cloud Infrastructure </h2>
+                <p> AWS, Docker, Terraform, Go </p>
+              </Box>
+            </Grid>
+            <Grid item cols={6}>
+              <Box color='gray' corners='rounder'>
+                <h2> Programming </h2>
+                <p> Python, Clojure, Bash </p>
+              </Box>
+            </Grid>
+          </Grid>
 
-      <Grid container spacing="md">
-        <Grid item cols={2} />
-        <Grid item cols={4}>
-          <Box color='blue' corners='roundest'>
-            <h2> Backend Development </h2>
-            <p> MySQL, PostgreSQL, MongoDB, NodeJS </p>
-          </Box>
-        </Grid>
-        <Grid item cols={4}>
-          <Box color='gray' corners='rounder'>
-            <h2> Frontend Development </h2>
-            <p> Typescript, React  </p>
-          </Box>
+          <Grid container spacing="md">
+            <Grid item cols={6}>
+              <Box color='gray' corners='rounder'>
+                <h2> Continuous Integration & Delivery </h2>
+                <p> CircleCI, Jenkins, Github Actions </p>
+              </Box>
+            </Grid>
+            <Grid item cols={6}>
+              <Box color='blue' corners='roundest'>
+                <h2> Test Automation </h2>
+                <p> Python, Selenium, Gridlastic, Terratest </p>
+              </Box>
+            </Grid>
+          </Grid>
+
+          <Grid container spacing="md">
+            <Grid item cols={6}>
+              <Box color='blue' corners='roundest'>
+                <h2> Backend Development </h2>
+                <p> MySQL, PostgreSQL, MongoDB, NodeJS </p>
+              </Box>
+            </Grid>
+            <Grid item cols={6}>
+              <Box color='gray' corners='rounder'>
+                <h2> Frontend Development </h2>
+                <p> Typescript, React  </p>
+              </Box>
+            </Grid>
+          </Grid>
+
         </Grid>
         <Grid item cols={2} />
       </Grid>

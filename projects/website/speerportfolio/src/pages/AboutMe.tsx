@@ -16,16 +16,21 @@ function AboutMe() {
     <div className="App">
       <Header />
       <NavBar />
-      <Grid container spacing="lg">
+
+      <Grid container spacing="md">
         <Grid item cols={2} />
-        <Grid item cols={4}>
-          <Box color='dark_gray' corners='rounder'>
-            <AboutContent />
-            <ContactContent />
-          </Box>
-        </Grid>
-        <Grid item cols={4}>
-          <img src={photo} className="App-photo" alt="Headshot" />
+        <Grid item cols={8}>
+          <Grid container spacing="lg">
+            <Grid item cols={6}>
+              <Box color='dark_gray' corners='rounder'>
+                <AboutContent />
+                <ContactContent />
+              </Box>
+            </Grid>
+            <Grid item cols={6}>
+              <img src={photo} className="App-photo" alt="Headshot" />
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item cols={2} />
       </Grid>
@@ -37,6 +42,7 @@ function AboutMe() {
           </Box>
         </Grid>
       </Grid>
+
     </div>
   );
 }

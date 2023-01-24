@@ -6,12 +6,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 10vh;
+    height: 20vh;
 }
 
 .NavLink {
     color: #463F3A;
     font-size: calc(10px + 2vmin);
-    margin-left:50px;
-    margin-right:50px;
+    margin-left:10vh;
+    margin-right:10vh;
 }

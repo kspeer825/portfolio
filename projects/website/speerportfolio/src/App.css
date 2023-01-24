@@ -3,16 +3,21 @@
 }
 
 .App-photo {
+    display: flex;
     height: 40vmin;
     pointer-events: none;
     border-radius: 24px;
 }
 
 .App-logo {
+    display: flex;
     float: right;
     border-radius: 4px;
     padding: 5px;
-    width: 50px;
+    height: auto;
+    width: auto;
+    min-height: 25px;
+    max-height: 7vh;
     right: 0px;
 }
 

@@ -5,6 +5,8 @@ import Header from '../components/Header'
 import NavBar from '../Nav';
 import '../App.css';
 
+
+
 function Projects() {
   return (
     <div className="App">
@@ -14,11 +16,11 @@ function Projects() {
       <Grid container spacing="lg">
         <Grid item cols={12}>
           <Box color='light_gray' corners='round'>
-            <h1 >
-              *******************************************<br />
+            <h2 >
+              * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *<br />
               This page is a WIP. Please check back soon!<br />
-              *******************************************<br />
-            </h1>
+              * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *<br />
+            </h2>
           </Box>
         </Grid>
       </Grid>
