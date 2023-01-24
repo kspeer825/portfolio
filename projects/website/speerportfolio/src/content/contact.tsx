@@ -13,7 +13,7 @@ function ContactContent() {
     <>
       <p>
         <br /><br />
-        I am always open to hearing aobut new opportunites.<br />
+        I am always open to hearing about new opportunites.<br />
         Feel free to send me a message!
       </p>
       <p>
