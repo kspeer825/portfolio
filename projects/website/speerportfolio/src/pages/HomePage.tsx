@@ -16,8 +16,7 @@ function HomePage() {
       <NavBar />
 
       <Grid container spacing="md">
-        <Grid item cols={1} />
-        <Grid item cols={3}>
+        <Grid item cols={8}>
           <Box color='dark_gray' corners='rounder'>
             <h2> My proficiencies include... </h2>
           </Box>
@@ -25,8 +24,8 @@ function HomePage() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={2} />
-        <Grid item cols={8}>
+        <Grid item cols={1} />
+        <Grid item cols={10}>
 
           <Grid container spacing="md">
             <Grid item cols={6}>
@@ -78,8 +77,7 @@ function HomePage() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={1} />
-        <Grid item cols={3}>
+        <Grid item cols={8}>
           <Box color='dark_gray' corners='rounder'>
             <h2> A little about me... </h2>
           </Box>
@@ -88,8 +86,8 @@ function HomePage() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={2} />
-        <Grid item cols={8}>
+        <Grid item cols={1} />
+        <Grid item cols={10}>
           <Box color='gray' corners='rounder'>
             <AboutContent />
           </Box>

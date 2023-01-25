@@ -14,8 +14,7 @@ function Professional() {
       <NavBar />
 
       <Grid container spacing="md">
-        <Grid item cols={1} />
-        <Grid item cols={3}>
+        <Grid item cols={8}>
           <Box color='dark_gray' corners='rounder'>
             <h2> My professional experience... </h2>
           </Box>
@@ -23,8 +22,7 @@ function Professional() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={2} />
-        <Grid item cols={4}>
+        <Grid item cols={10}>
           <Box color='blue' corners='roundest'>
             <h2> DevOps Engineer at Ophelia Health </h2>
             <p> Oct 2022 - Jan 2023 </p>
@@ -33,8 +31,8 @@ function Professional() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={3} />
-        <Grid item cols={7}>
+        <Grid item cols={1} />
+        <Grid item cols={10}>
           <Box color='gray' corners='rounder'>
             <h2> Summary </h2>
             <p>
@@ -79,8 +77,7 @@ function Professional() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={2} />
-        <Grid item cols={4}>
+        <Grid item cols={10}>
           <Box color='blue' corners='roundest'>
             <h2> Senior QA Engineer at Stitch </h2>
             <p> Apr 2022 - Sep 2022 </p>
@@ -89,8 +86,8 @@ function Professional() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={3} />
-        <Grid item cols={7}>
+        <Grid item cols={1} />
+        <Grid item cols={10}>
           <Box color='gray' corners='rounder'>
             <h2> Summary </h2>
             <p>
@@ -147,8 +144,7 @@ function Professional() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={2} />
-        <Grid item cols={4}>
+        <Grid item cols={10}>
           <Box color='blue' corners='roundest'>
             <h2> QA Engineer at Stitch </h2>
             <p> Apr 2021 - Apr 2022 </p>
@@ -157,8 +153,8 @@ function Professional() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={3} />
-        <Grid item cols={7}>
+        <Grid item cols={1} />
+        <Grid item cols={10}>
           <Box color='gray' corners='rounder'>
             <h2> Summary </h2>
             <p>
@@ -202,8 +198,7 @@ function Professional() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={2} />
-        <Grid item cols={4}>
+        <Grid item cols={10}>
           <Box color='blue' corners='roundest'>
             <h2> Junior QA Engineer at Stitch </h2>
             <p> Aug 2019 - Apr 2021 </p>
@@ -212,8 +207,8 @@ function Professional() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={3} />
-        <Grid item cols={7}>
+        <Grid item cols={1} />
+        <Grid item cols={10}>
           <Box color='gray' corners='rounder'>
             <h2> Summary </h2>
             <p>
