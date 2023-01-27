@@ -1,0 +1,38 @@
+name: 'Build Deploy Speer Porftolio Website'
+
+on:
+  workflow_dispatch:
+    branches: [ "main" ]
+    inputs:
+      awsRegion:
+        type: choice
+        default: 'us-east-2'
+        options:
+          - 'us-east-2'
+          - 'us-east-1'
+
+
+jobs:
+  build_deploy:
+    name: 'Build/Deploy App'
+    runs-on: ubuntu-latest
+    environment: production
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: projects/website
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Configure AWS
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.PROD_USER_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.PROD_USER_AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ inputs.awsRegion }}
+
+      - name: Build & Deploy
+        run: ./build_deploy.sh
