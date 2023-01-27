@@ -25,4 +25,5 @@ echo "
 Deploying contents to ${bucket}...
 **************************************************
 "
+aws s3 rm s3://$bucket/*
 aws s3 cp . s3://$bucket --recursive $2
