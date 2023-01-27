@@ -4,7 +4,10 @@
 
 .App-photo {
     display: flex;
-    height: 40vmin;
+    height: auto;
+    width: auto;
+    min-height: 10vh;
+    max-height: 40vh;
     pointer-events: none;
     border-radius: 24px;
 }

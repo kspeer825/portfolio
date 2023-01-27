@@ -18,32 +18,46 @@ function AboutMe() {
       <NavBar />
 
       <Grid container spacing="md">
-        <Grid item cols={2} />
         <Grid item cols={8}>
-          <Grid container spacing="lg">
-            <Grid item cols={6}>
-              <Box color='dark_gray' corners='rounder'>
-                <AboutContent />
-                <ContactContent />
-              </Box>
-            </Grid>
-            <Grid item cols={6}>
-              <img src={photo} className="App-photo" alt="Headshot" />
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid item cols={2} />
-      </Grid>
-
-      <Grid container spacing="lg">
-        <Grid item cols={2} />
-        <Grid item cols={8}>
-          <Box color='light_gray' corners='round'>
+          <Box color="dark_gray" corners="rounder">
+            <h2> A little about me... </h2>
           </Box>
         </Grid>
       </Grid>
 
-    </div>
+      <Grid container spacing="md">
+        <Grid item cols={1} />
+
+        <Grid item cols={10}>
+          <Box color="dark_gray" corners="rounder">
+            <Grid container_gray spacing="md" >
+              <Grid item cols={12}>
+                <Box color="blue" corners="roundest">
+                  <AboutContent />
+                  <ContactContent />
+                </Box>
+              </Grid>
+            </Grid>
+            <Grid container_gray spacing="md" >
+              <Grid item cols={3} />
+              <Grid item cols={6}>
+                <img src={photo} className="App-photo" alt="Headshot" />
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
+
+      </Grid >
+
+      <Grid container spacing="lg">
+        <Grid item cols={2} />
+        <Grid item cols={8}>
+          <Box color="light_gray" corners="round">
+          </Box>
+        </Grid>
+      </Grid>
+
+    </div >
   );
 }
 

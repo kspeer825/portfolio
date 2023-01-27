@@ -31,7 +31,7 @@ function HomePage() {
             <Grid item cols={6}>
               <Box color='blue' corners='roundest'>
                 <h2> Cloud Infrastructure </h2>
-                <p> AWS, Docker, Terraform, Go </p>
+                <p> AWS, Docker, Terraform </p>
               </Box>
             </Grid>
             <Grid item cols={6}>

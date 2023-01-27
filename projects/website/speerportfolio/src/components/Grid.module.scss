@@ -5,6 +5,13 @@
 	background-color: #BCB8B1;
     }
 
+    &_container_gray {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #463F3A;
+    }
+
+
     &_item {
 	display: block;
     }
@@ -27,4 +34,5 @@
     &_spacing_lg > &_item {
 	padding: 24px;
     }
+
 }

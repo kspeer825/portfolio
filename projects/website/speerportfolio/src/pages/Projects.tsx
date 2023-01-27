@@ -12,10 +12,9 @@ function Projects() {
     <div className="App">
       <Header />
       <NavBar />
-
-      <Grid container spacing="lg">
-        <Grid item cols={12}>
-          <Box color='light_gray' corners='round'>
+      <Grid container spacing="md">
+        <Grid item cols={8}>
+          <Box color='dark_gray' corners='rounder'>
             <h2 >
               * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *<br />
               This page is a WIP. Please check back soon!<br />

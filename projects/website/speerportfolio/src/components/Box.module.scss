@@ -37,4 +37,9 @@
 	color: #F4F3EE;
 	background-color: #BCB8B1;
     }
+
+    &_transparent {
+	color: #F4F3EE;
+	background: rgba(0,0,0,0.5);
+    }
 }
