@@ -45,6 +45,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.PROD_USER_AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
+      - name: Install Dependencies
+        run: yarn install
+
       - name: Build & Upload
         run: ./build_upload.sh ${{ env.AWS_BUCKET }}
 
