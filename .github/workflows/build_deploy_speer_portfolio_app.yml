@@ -49,4 +49,4 @@ jobs:
         run: ./build_upload.sh ${{ env.AWS_BUCKET }}
 
       - name: Deploy
-        run: ./refresh_cdn.sh ${{ env.AWS_BUCKET }}
+        run: ./deploy.sh ${{ env.AWS_BUCKET }}
