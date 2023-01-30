@@ -8,8 +8,10 @@ Building...
 **************************************************
 "
 cd $(git rev-parse --show-toplevel)/projects/website/speerportfolio
+yarn --version
+yarn install
 yarn build
-
+exit 1
 echo "
 **************************************************
 Build Complete.
