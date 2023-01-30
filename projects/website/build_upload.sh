@@ -17,13 +17,18 @@ Build Complete.
 
 Build contents:
 "
-cd build
-ls -alSh
+ls -alSh build
+
+echo "
+**************************************************
+Removing contents from ${bucket}...
+**************************************************
+"
+aws s3 rm s3://$bucket --recursive $2
 
 echo "
 **************************************************
 Deploying contents to ${bucket}...
 **************************************************
 "
-aws s3 rm s3://$bucket/*
-aws s3 cp . s3://$bucket --recursive $2
+aws s3 cp ./build/ s3://$bucket --recursive $2

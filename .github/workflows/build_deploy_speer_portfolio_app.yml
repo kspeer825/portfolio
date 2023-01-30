@@ -36,5 +36,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.PROD_USER_AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ inputs.awsRegion }}
 
-      - name: Build & Deploy
-        run: ./build_deploy.sh ${{ inputs.awsS3BucketName }}
+      - name: Build & Upload
+        run: ./build_upload.sh ${{ inputs.awsS3BucketName }}
+
+      - name: Deploy
+        run: ./refresh_cdn.sh ${{ inputs.awsS3BucketName }}
