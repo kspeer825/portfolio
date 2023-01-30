@@ -2,12 +2,14 @@
 
 bucket=$1
 
+
 echo "
 **************************************************
 Building...
 **************************************************
 "
 cd $(git rev-parse --show-toplevel)/projects/website/speerportfolio
+yarn install
 yarn build
 
 echo "
