@@ -1,8 +1,24 @@
 name: 'Build Deploy Speer Porftolio Website'
 
 on:
+  push:
+    branches: [ 'main' ]
+    path:
+      - 'projects/website/speerportfolio/**'
+      - '!projects/website/speerportfolio/README.md'
+    inputs:
+      awsRegion:
+        type: choice
+        default: 'us-east-2'
+        options:
+          - 'us-east-2'
+          - 'us-east-1'
+      awsS3BucketName:
+        type: string
+        default: 'kyle.speer.portfolio'
+
   workflow_dispatch:
-    branches: [ "main" ]
+    branches: [ 'main' ]
     inputs:
       awsRegion:
         type: choice
