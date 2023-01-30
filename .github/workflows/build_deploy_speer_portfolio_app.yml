@@ -3,7 +3,7 @@ name: 'Build Deploy Speer Porftolio Website'
 on:
   push:
     branches: [ 'main' ]
-    path:
+    paths:
       - 'projects/website/speerportfolio/**'
       - '!projects/website/speerportfolio/README.md'
 
