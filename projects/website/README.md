@@ -2,8 +2,6 @@
 This is my personal website currently available at https://speerportfolio.com/.
 Created  January 2023
 
-
-
 ## Overview
 ![Frontend](https://github.com/kspeer825/portfolio/actions/workflows/speer_portfolio_build_deploy.yml/badge.svg)
 ![Infrastructure]()
@@ -11,36 +9,37 @@ Created  January 2023
 The website is meant to be an extension of my resume with details of personal projects and professionl experiences.
 
 It is hosted in AWS using Cloudfront, S3, and ACM. The frontend is built using React and Typescript. I have professional
-experience with React apps, but I am not a frontend dev. The site is very simple, a SPA made up of a few React components.
-Personally, I think the infrastructure is the more interesting section of this project.
+experience with React apps, but I am not a frontend dev. The site is very simple, a client-side SPA made up of a few React
+components. Personally, I think the infrastructure is the more interesting section of this project.
 
+## Infrastructure
 Typically static websites hosted in AWS leverage EC2 instances, or so I thought. Using EC2 servers you have the option
 to scale vertically through the available instance types. You also have the ability to scale horizontally using ELB
-options. You can apply SSL/TLS certificates to load balancers to secure the site, and you can monitor everything via
+options. You can apply SSL/TLS certificates to the load balancer to secure the site, and you can monitor everything via
 CloudWatch.
 
 Turns out you don't actually need all of that. S3 has a configuration option to enable static web hosting. You can
 toss your bundled frontend app into a publicly available bucket, and secure it by applying a policy and/or using ACL's
-to restrict access to specific services or usersss. In the case of a simple static site like this, restricting access
-to Cloudfornt is a great option. By setting up a Cloudfront distribution (CDN) and pointing it at the `index.html` behind
+to restrict access to specific services or users. In the case of a simple website like this, restricting access to
+Cloudfornt is a great option. By setting up a Cloudfront distribution (CDN) and pointing it at the `index.html` behind
 the bucket endpoint you can enable HTTP to HTTPS redirects, in addition to getting all the performance and caching
-benefits that come with Cloudfront.
+benefits that come with Cloudfront. The distribution has a url endpoint based on the distibution id, but you can set
+up a DNS entry in Route53 to piont your custom domain to Cloudfront.
+
+This approach isn't great for all use-cases, but for a simple client-side web app it works great.
 
 ## Tooling
-
 ### Infrastructure
-
-#### AWS Cloudfront
-#### AWS S3
-#### AWS Amazon Certificate Manager
-
+- AWS Cloudfront
+- AWS S3
+- AWS Amazon Certificate Manager
+- AWS Route53
 
 ### CI/CD
-#### Terraform
-#### GitHub Actions
-
+- Terraform
+- GitHub Actions
 
 ### Web
-### yarn
-### Create React App (CRA)
-### Typescript
+- yarn
+- Create React App (CRA)
+- Typescript
