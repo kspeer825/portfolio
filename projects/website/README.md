@@ -3,7 +3,7 @@ This is my personal website currently available at https://speerportfolio.com/.
 Created  January 2023
 
 ## Overview
-![Frontend](https://github.com/kspeer825/portfolio/actions/workflows/speer_portfolio_build_deploy.yml/badge.svg)
+![Frontend](https://github.com/kspeer825/portfolio/actions/workflows/build_deploy_speer_portfolio_app.yml/badge.svg)
 ![Infrastructure]()
 
 The website is meant to be an extension of my resume with details of personal projects and professionl experiences.
