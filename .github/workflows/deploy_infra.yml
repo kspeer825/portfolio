@@ -20,11 +20,12 @@ jobs:
     env:
       ACCESS_KEY_ID: ${{ secrets.PROD_USER_AWS_ACCESS_KEY_ID }}
       SECRET_ACCESS_KEY: ${{ secrets.PROD_USER_AWS_SECRET_ACCESS_KEY }}
+      BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
 
     defaults:
       run:
         shell: bash
-        working-directory: infra
+        working-directory: projects/website/infra/infra
 
     steps:
       - name: Checkout

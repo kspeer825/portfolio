@@ -16,9 +16,6 @@ on:
         options:
           - 'us-east-2'
           - 'us-east-1'
-      awsS3BucketName:
-        type: string
-        default: 'kyle.speer.portfolio'
 
 jobs:
   build_deploy:
@@ -27,7 +24,6 @@ jobs:
     environment: production
     env:
       AWS_REGION: ${{ inputs.awsRegion || 'us-east-2' }}
-      AWS_BUCKET: ${{ inputs.awsS3BucketName || 'kyle.speer.portfolio' }}
 
     defaults:
       run:
@@ -46,7 +42,7 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Build & Upload
-        run: ./build_upload.sh ${{ env.AWS_BUCKET }}
+        run: ./build_upload.sh ${{ secrets.AWS_BUCKET_NAME }}
 
       - name: Deploy
-        run: ./deploy.sh ${{ env.AWS_BUCKET }}
+        run: ./deploy.sh ${{ secrets.AWS_BUCKET_NAME }}
