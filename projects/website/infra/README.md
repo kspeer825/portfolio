@@ -3,9 +3,6 @@
 ## Infrastructure
 ![Deploy](https://github.com/kspeer825/KYLE_Challenge/actions/workflows/deploy_infra.yml/badge.svg)
 
-### DEMO
-The infrastructure can be deployed via GH Actions [here](https://github.com/kspeer825/KYLE_Challenge/actions/workflows/deploy_infra.yml).
-
 ### Prerequisites
 The following tools are needed to stand up this infrastructure:
 
@@ -113,22 +110,6 @@ And to execute the tests:
 ```
 $  go test -v -timeout 30m
 
-=== RUN   TestTerraformCloudfrontS3StaticSite
-
-**********DRYRUN EXECUTION: Skipping terraform init and apply.**********
-TestTerraformCloudfrontS3StaticSite 2023-01-20T13:58:46-05:00 retry.go:91: terraform [output -no-color -json s3_bucket_name]
-TestTerraformCloudfrontS3StaticSite 2023-01-20T13:58:46-05:00 logger.go:66: Running command terraform with args [output -no-color -json s3_bucket_name]
-TestTerraformCloudfrontS3StaticSite 2023-01-20T13:58:46-05:00 logger.go:66: "kyle.speer.infra.challenge"
-TestTerraformCloudfrontS3StaticSite 2023-01-20T13:58:46-05:00 s3.go:126: Read contents from s3://kyle.speer.infra.challenge/index.html
-TestTerraformCloudfrontS3StaticSite 2023-01-20T13:58:46-05:00 http_helper.go:59: Making an HTTP GET call to URL http://kyle.speer.infra.challenge.s3-website.us-east-2.amazonaws.com
-TestTerraformCloudfrontS3StaticSite 2023-01-20T13:58:46-05:00 retry.go:91: terraform [output -no-color -json cloudfront_distribution_domain_name]
-TestTerraformCloudfrontS3StaticSite 2023-01-20T13:58:46-05:00 logger.go:66: Running command terraform with args [output -no-color -json cloudfront_distribution_domain_name]
-TestTerraformCloudfrontS3StaticSite 2023-01-20T13:58:47-05:00 logger.go:66: "d32st815qezhpt.cloudfront.net"
-TestTerraformCloudfrontS3StaticSite 2023-01-20T13:58:47-05:00 http_helper.go:59: Making an HTTP GET call to URL https://d32st815qezhpt.cloudfront.net
---- PASS: TestTerraformCloudfrontS3StaticSite (1.09s)
-PASS
-ok      github.com/kspeer825/KYLE_Challenge     1.877s
-```
 Note the above output is executed with `dryRun = true` relying on existing infrastruture.
 
 When `dryRun = false` the plan is actually applied and destroyed. This can take a while to execute as Cloudfront can take up to 20 minutes to fully distribute the CDN.
