@@ -88,6 +88,10 @@ module "website_cf_cdn" {
       response_page_path    = "/index.html"
     }
   ]
+  viewer_certificate = {
+    acm_certificate_arn = "${var.certificate_arn}"
+    ssl_support_method  = "sni-only"
+  }
 }
 
 data "aws_iam_policy_document" "s3_policy" {

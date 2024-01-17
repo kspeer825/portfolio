@@ -19,5 +19,10 @@ variable "aws_secret_access_key" {
 variable "aws_bucket_name" {
   type      = string
   sensitive = true
-  default    = "kkyle.speer.infra.challenge"
+}
+
+variable "certificate_arn" {
+  type      = string
+  sensitive = true
+  default    = "arn:aws:acm:us-east-1:598651859188:certificate/8c74a326-40f2-43ad-a55c-9acce03e5e89"
 }

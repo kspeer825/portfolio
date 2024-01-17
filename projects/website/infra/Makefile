@@ -4,7 +4,7 @@ tf_vars ?= -var="aws_region=us-east-2" -var="aws_access_key=${AWS_ACCESS_KEY_ID}
 
 
 
-.PHONY: setup-env debug-env plan apply
+.PHONY: check-env setup-env debug-env init plan apply
 
 check-env:
 ifndef AWS_PROFILE
@@ -23,12 +23,29 @@ setup-env: check-env
 debug-env: setup-env
 	@env
 
+# Terraform
 
 init: setup-env
-	cd infra && terraform init $(tf_vars)
+	terraform -chdir=infra init $(tf_vars)
 
 plan: setup-env
-	cd infra && terraform plan $(tf_vars)
+	terraform -chdir=infra plan $(tf_vars)
 
-# apply:
-#	terraform apply $(tf_vars)
+apply:
+	terraform -chdir=infra apply $(tf_vars)
+
+# React App
+
+app-build: setup-env
+	@cd ../speerportfolio && yarn build
+
+app-start: setup-env
+	@cd ../speerportfolio && yarn start
+
+app-install: setup-env
+	@cd ../speerportfolio && yarn install-clean
+
+app-deploy: setup-env
+	@echo "Target Bucket: ${AWS_BUCKET_NAME}"
+	@./../build_upload.sh ${AWS_BUCKET_NAME}
+	@./../deploy.sh ${AWS_BUCKET_NAME}

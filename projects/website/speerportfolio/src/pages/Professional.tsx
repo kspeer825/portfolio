@@ -59,7 +59,7 @@ function Professional() {
 	    prior to hearing about it from an end user."
             />
             <ProjectBox
-              title="Implement a CI/CD for Clinician-Facing Web App"
+              title="Implement a CI/CD Pipeline for Clinician-Facing Web App"
               tools="Github Actions, Bash, Firebase Hosting, Firebase Functions"
               description="I implemented a CI/CD pipeline for a web app that consisted of building and deploying a
 	    staging environment, executing frontend automation tests against that staging environment, and then
