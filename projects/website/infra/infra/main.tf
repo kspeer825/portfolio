@@ -16,6 +16,13 @@ module "website_s3_bucket" {
 
 }
 
+resource "aws_s3_bucket_ownership_controls" "owner" {
+  bucket = module.website_s3_bucket.s3_bucket_id
+  rule {
+    object_ownership = "BucketOwnerPreferred"
+  }
+}
+
 module "template_files" {
   source  = "hashicorp/dir/template"
   version = "1.0.2"
@@ -46,6 +53,8 @@ module "website_cf_cdn" {
   price_class         = "PriceClass_100"
   wait_for_deployment = true
 
+
+  aliases = ["speerportfolio.com"]
   create_origin_access_identity = true
   origin_access_identities = {
     cloudfront_s3 = "Cloudfront CDN to bucket access."

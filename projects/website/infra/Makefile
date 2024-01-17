@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-tf_vars ?= -var="aws_region=us-east-2" -var="aws_access_key=${AWS_ACCESS_KEY_ID}" -var="aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}" -var="aws_bucket_name=${AWS_BUCKET_NAME}"
+tf_vars ?= -var="aws_region=us-east-1" -var="aws_access_key=${AWS_ACCESS_KEY_ID}" -var="aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}" -var="aws_bucket_name=${AWS_BUCKET_NAME}"
 
 
 
@@ -32,7 +32,7 @@ plan: setup-env
 	terraform -chdir=infra plan $(tf_vars)
 
 apply:
-	terraform -chdir=infra apply $(tf_vars)
+	terraform -chdir=infra apply -auto-approve $(tf_vars)
 
 # React App
 
