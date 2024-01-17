@@ -28,11 +28,18 @@ debug-env: setup-env
 init: setup-env
 	terraform -chdir=infra init $(tf_vars)
 
+fmt:
+	terraform -chdir=infra fmt
+
 plan: setup-env
 	terraform -chdir=infra plan $(tf_vars)
 
-apply:
+apply: setup-env
 	terraform -chdir=infra apply -auto-approve $(tf_vars)
+
+test: setup-env
+	terraform -chdir=infra fmt -check
+	terraform -chdir=infra validate
 
 # React App
 
