@@ -24,7 +24,6 @@ jobs:
     environment: production
     env:
       AWS_REGION: ${{ inputs.awsRegion || 'us-east-1' }}
-      AWS_PROFILE: 'prod_user'
       AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
 
     defaults:
