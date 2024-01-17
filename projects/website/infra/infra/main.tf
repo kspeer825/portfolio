@@ -6,7 +6,7 @@ module "website_s3_bucket" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "3.6.0"
 
-  bucket = "${var.aws_bucket_name}"
+  bucket = var.aws_bucket_name
   acl    = "public-read"
 
   website = {
@@ -54,7 +54,7 @@ module "website_cf_cdn" {
   wait_for_deployment = true
 
 
-  aliases = ["speerportfolio.com"]
+  aliases                       = ["speerportfolio.com"]
   create_origin_access_identity = true
   origin_access_identities = {
     cloudfront_s3 = "Cloudfront CDN to bucket access."
@@ -98,9 +98,9 @@ module "website_cf_cdn" {
     }
   ]
   viewer_certificate = {
-    acm_certificate_arn = "${var.certificate_arn}"
-    ssl_support_method  = "sni-only"
-    minimum_protocol_version =  "TLSv1.2_2021"
+    acm_certificate_arn      = "${var.certificate_arn}"
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
 
   }
 }
