@@ -11,7 +11,7 @@ ifndef AWS_PROFILE
 	$(error AWS_PROFILE is not set)
 endif
 ifndef AWS_BUCKET_NAME
-	$(error AWS_BUCKET_NAME_FLAG is not set)
+	$(error AWS_BUCKET_NAME is not set)
 endif
 
 setup-env: check-env

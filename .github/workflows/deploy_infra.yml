@@ -45,8 +45,8 @@ jobs:
 
       - name: Terraform Plan
         if: ${{ inputs.plan }}
-        run: make plan
+        run: make init plan
 
       - name: Terraform Apply
         if: ${{ inputs.apply }}
-        run: make apply
+        run: make init apply
