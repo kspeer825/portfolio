@@ -23,12 +23,14 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     env:
-      AWS_REGION: ${{ inputs.awsRegion || 'us-east-2' }}
+      AWS_REGION: ${{ inputs.awsRegion || 'us-east-1' }}
+      AWS_PROFILE: 'prod_user'
+      AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
 
     defaults:
       run:
         shell: bash
-        working-directory: projects/website
+        working-directory: projects/website/infra
 
     steps:
       - name: Checkout
@@ -41,8 +43,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.PROD_USER_AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Build & Upload
-        run: ./build_upload.sh ${{ secrets.AWS_BUCKET_NAME }}
-
-      - name: Deploy
-        run: ./deploy.sh ${{ secrets.AWS_BUCKET_NAME }}
+      - name: Build, Upload, & Deploy
+        run: make app-deploy
