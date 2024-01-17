@@ -9,7 +9,7 @@ Building...
 **************************************************
 "
 cd $(git rev-parse --show-toplevel)/projects/website/speerportfolio
-yarn install
+yarn install-clean
 yarn build
 
 echo "
