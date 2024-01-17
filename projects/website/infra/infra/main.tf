@@ -23,25 +23,25 @@ resource "aws_s3_bucket_ownership_controls" "owner" {
   }
 }
 
-module "template_files" {
-  source  = "hashicorp/dir/template"
-  version = "1.0.2"
+# module "template_files" {
+#   source  = "hashicorp/dir/template"
+#   version = "1.0.2"
 
-  base_dir = "${path.module}/www"
-}
+#   base_dir = "${path.module}/www"
+# }
 
-resource "aws_s3_object" "web" {
+# resource "aws_s3_object" "web" {
 
-  for_each = module.template_files.files
+#   for_each = module.template_files.files
 
-  bucket = module.website_s3_bucket.s3_bucket_id
+#   bucket = module.website_s3_bucket.s3_bucket_id
 
-  key          = each.key
-  source       = each.value.source_path
-  content      = each.value.content
-  etag         = each.value.digests.md5
-  content_type = each.value.content_type
-}
+#   key          = each.key
+#   source       = each.value.source_path
+#   content      = each.value.content
+#   etag         = each.value.digests.md5
+#   content_type = each.value.content_type
+# }
 
 ############################################################
 # AWS Cloudfront CDN
@@ -100,6 +100,8 @@ module "website_cf_cdn" {
   viewer_certificate = {
     acm_certificate_arn = "${var.certificate_arn}"
     ssl_support_method  = "sni-only"
+    minimum_protocol_version =  "TLSv1.2_2021"
+
   }
 }
 
@@ -117,4 +119,36 @@ data "aws_iam_policy_document" "s3_policy" {
 resource "aws_s3_bucket_policy" "docs" {
   bucket = module.website_s3_bucket.s3_bucket_id
   policy = data.aws_iam_policy_document.s3_policy.json
+}
+
+############################################################
+# AWS R53
+############################################################
+
+resource "aws_route53_zone" "primary" {
+  name = "speerportfolio.com"
+}
+
+resource "aws_route53_record" "ipv4_cf" {
+  zone_id = aws_route53_zone.primary.zone_id
+  name    = "speerportfolio.com"
+  type    = "A"
+
+  alias {
+    name                   = module.website_cf_cdn.cloudfront_distribution_domain_name
+    zone_id                = module.website_cf_cdn.cloudfront_distribution_hosted_zone_id
+    evaluate_target_health = false
+  }
+}
+
+resource "aws_route53_record" "ipv6_cf" {
+  zone_id = aws_route53_zone.primary.zone_id
+  name    = "speerportfolio.com"
+  type    = "AAAA"
+
+  alias {
+    name                   = module.website_cf_cdn.cloudfront_distribution_domain_name
+    zone_id                = module.website_cf_cdn.cloudfront_distribution_hosted_zone_id
+    evaluate_target_health = false
+  }
 }
