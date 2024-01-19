@@ -23,16 +23,16 @@ debug-env:
 # Terraform
 
 init:
-	terraform -chdir=infra init $(tf_vars)
+	@terraform -chdir=infra init $(tf_vars)
 
 fmt:
 	terraform -chdir=infra fmt
 
 plan:
-	terraform -chdir=infra plan $(tf_vars)
+	@terraform -chdir=infra plan $(tf_vars)
 
 apply:
-	terraform -chdir=infra apply -auto-approve $(tf_vars)
+	@terraform -chdir=infra apply -auto-approve $(tf_vars)
 
 test:
 	terraform -chdir=infra fmt -check
