@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-tf_vars ?= -var="aws_region=us-east-1" -var="aws_access_key=${AWS_ACCESS_KEY_ID}" -var="aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}"
+default_tf_vars ?= -var="aws_region=us-east-1" -var="aws_access_key=${AWS_ACCESS_KEY_ID}" -var="aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}"
 
 .PHONY: check-env setup-env debug-env clean init fmt plan apply test
 
@@ -24,16 +24,16 @@ clean:
 # Terraform
 
 init:
-	@terraform init $(tf_vars)
+	@terraform init $(default_tf_vars) $(tf_vars)
 
 fmt:
 	terraform fmt
 
 plan:
-	@terraform plan $(tf_vars)
+	@terraform plan $(default_tf_vars) $(tf_vars)
 
 apply:
-	@terraform apply -auto-approve $(tf_vars)
+	@terraform apply -auto-approve $(default_tf_vars) $(tf_vars)
 
 test:
 	terraform fmt -check
