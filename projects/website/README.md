@@ -13,7 +13,7 @@ Created  January 2023
 
 The website is meant to be an extension of my resume with details of personal projects and professionl experiences.
 
-It is hosted in AWS using Cloudfront, S3, and ACM. The frontend is built using React and Typescript. I have professional
+It is hosted in AWS using Cloudfront, S3, R53, and ACM. The frontend is built using React and Typescript. I have professional
 experience with React apps, but I am not a frontend dev. The site is very simple, a client-side SPA made up of a few React components.
 
 ## Infrastructure

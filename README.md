@@ -23,6 +23,7 @@ A collection of practices and tooling for building software that I think are use
 ### Patterns & Practices
  - Pair Programming / Extreme Programming
  - Test Driven Development
+ - Terraform Remote State ([explanation](https://github.com/kspeer825/portfolio/tree/main/projects/website/infra/remote-state#terraform-remote-state-bucket))
 
 ### Tools
  - [Terraform](https://developer.hashicorp.com/terraform/intro)
