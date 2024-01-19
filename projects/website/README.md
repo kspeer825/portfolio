@@ -1,10 +1,5 @@
 # Personal Website
 This is my personal website currently available at https://speerportfolio.com/.
-Created  January 2023
-
-## ToDo's
- - [ ] Dockerfile for local developmmeent
- - [ ] Update `Professional Experience` with current position / project
 
 ## Overview
 [![Frontend](https://github.com/kspeer825/portfolio/actions/workflows/build_deploy_speer_portfolio_app.yml/badge.svg)](https://github.com/kspeer825/portfolio/actions/workflows/build_deploy_speer_portfolio_app.yml)
@@ -43,3 +38,8 @@ This approach isn't great for all use-cases, but for a simple client-side web ap
 - yarn
 - Create React App
 - Typescript
+
+
+## ToDo's
+ - [ ] Dockerfile for local developmmeent
+ - [ ] Update `Professional Experience` with current position / project
