@@ -1,6 +1,6 @@
-# Interview Project 1
+# S3 Static Website Infrastructure
 
-## Infrastructure
+## CI/CD Pipeline
 [![Deploy](https://github.com/kspeer825/portfolio/actions/workflows/deploy_infra.yml/badge.svg)](https://github.com/kspeer825/portfolio/actions/workflows/deploy_infra.yml)
 
 ### Prerequisites

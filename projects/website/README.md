@@ -4,14 +4,12 @@ Created  January 2023
 
 ## ToDo's
  - [ ] Dockerfile for local developmmeent
- - [ ] Apply terraform to AWS components
  - [ ] Update `Professional Experience` with current position / project
- - [ ]
 
 ## Overview
-[![Frontend](https://github.com/kspeer825/portfolio/actions/workflows/build_deploy_speer_portfolio_app.yml/badge.svg)](https://github.com/kspeer825/portfolio/actions)
+[![Frontend](https://github.com/kspeer825/portfolio/actions/workflows/build_deploy_speer_portfolio_app.yml/badge.svg)](https://github.com/kspeer825/portfolio/actions/workflows/build_deploy_speer_portfolio_app.yml)
 
-![Infrastructure]()
+[![Infrastructure](https://github.com/kspeer825/portfolio/actions/workflows/deploy_infra.yml/badge.svg)](https://github.com/kspeer825/portfolio/actions/workflows/deploy_infra.yml)
 
 The website is meant to be an extension of my resume with details of personal projects and professionl experiences.
 
@@ -43,5 +41,5 @@ This approach isn't great for all use-cases, but for a simple client-side web ap
 
 ### Web
 - yarn
-- Create React App (CRA)
+- Create React App
 - Typescript
