@@ -4,7 +4,7 @@ A portfolio of personal projects. Everything is expressed in code where possible
 ## Projects
 
 ### Personal Website
-My personal website, currently available at [speerporfolio.com](https://speerportfolio.com/), is meant to be an extension of my resume with details of personal projects and professionl experiences.
+My personal website, currently available at [speerportfolio.com](https://speerportfolio.com/), is meant to be an extension of my resume with details of personal projects and professionl experiences.
 
 Components:
  - [Overview](https://github.com/kspeer825/portfolio/tree/main/projects/website/)
