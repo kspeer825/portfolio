@@ -1,0 +1,11 @@
+command:
+  terraform:
+    exec: "terraform -version"
+    exit-status: 0
+    stdout:
+      - Terraform v1.7.0
+  jq:
+    exec: "jq --version"
+    exit-status: 0
+    stdout:
+      - jq-1.6
