@@ -21,7 +21,7 @@ Build a new image.
 ```
 make build
 ```
-Enter a new continer.
+Enter a new container.
 ```
 make run
 ```
