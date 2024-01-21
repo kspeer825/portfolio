@@ -1,15 +1,17 @@
-# Base Terraform Image
-A simple RHEL container for executing Terraform plans.
+# Base Clojure Image
+A simple RHEL container for developing Clojure projects.
 
 Contents:
- - Terraform
+ - JVM
+ - Clojure
+ - Leiningen
  - GNU Make
  - jq
 
 ## Usage
-[Docker Hub](https://hub.docker.com/r/kspeer825/terraform/tags)
+[Docker Hub](https://hub.docker.com/r/kspeer825/clojure/tags)
 ```
-docker pull kspeer825/terraform:latest
+docker pull kspeer825/clojure:latest
 ```
 
 ## Development
