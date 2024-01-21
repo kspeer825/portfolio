@@ -23,3 +23,7 @@ override.tf.json
 # Deployment artifacts should be ignored
 **/distributions.json
 **/invalidation.json
+
+# Ignore hidden files in general
+
+**/.*
