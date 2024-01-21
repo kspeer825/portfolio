@@ -14,6 +14,9 @@ RUN yum -y install terraform
 # Install JSON Parser
 RUN yum -y install jq
 
+# Install GNU Make
+RUN yum -y install make
+
 # Install Goss
 RUN curl -L "https://github.com/goss-org/goss/releases/latest/download/goss-linux-amd64" -o /usr/local/bin/goss \
     && chmod +rx /usr/local/bin/goss
