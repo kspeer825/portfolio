@@ -1,7 +1,7 @@
 container_name ?= local-$(shell date "+%s")
 image_tag ?= terraform-local
-repo ?= kspeer825/simple-utils
-tagname ?= terrafrom
+username ?= kspeer825
+repo ?= $(username)/terraform
 version ?= $(shell cat version.txt)
 
 # docker build - < Dockerfile
@@ -25,8 +25,8 @@ login:
 	docker login -u $(username)
 
 push: clean build-clean test
-	docker tag $(image_tag) $(repo):$(tagname)-$(version)
-	docker push $(repo):$(tagname)-$(version)
+	docker tag $(image_tag) $(repo):$(version)
+	docker push $(repo):$(version)
 
 run:
 	docker run -it --name $(container_name) $(image_tag) sh

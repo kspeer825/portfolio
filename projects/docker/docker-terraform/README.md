@@ -2,10 +2,10 @@
 A simple RHEL container for executing Terraform plans.
 
 ## Usage
-Pull it from [Docker Hub](https://hub.docker.com/r/kspeer825/simple-utils/tags) like any other image.
+Pull it from [Docker Hub](https://hub.docker.com/r/kspeer825/terraform/tags) like any other image.
 
 ```
-docker pull kspeer825/simple-utils:terrafrom-1.0.0
+docker pull kspeer825/terraform:latest
 ```
 
 ## Development
@@ -22,7 +22,7 @@ make test
 
 # Push to repo
 make login username=<your-username>
-make push repo=<your-repo>
+make push username=<your-username> repo=<your-repo>
 ```
 
 ## Requirements

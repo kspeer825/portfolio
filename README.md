@@ -15,10 +15,12 @@ Components:
 ### Docker Images
 A series of simple, single-purpose base images.
 
-Available Docker Hub under [kspeer825/simple-utils](https://hub.docker.com/r/kspeer825/simple-utils/tags).
-| Image  | Version | Source |
-| ------------- | ------------- | ------------- |
-| Terraform  | 1.0.0  | [docker-terraform](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-terraform#base-terraform-image)  |
+Docker Hub profile [kspeer825](https://hub.docker.com/u/kspeer825).
+
+| Purpose  | Version | Source | Immage Repo |
+| ------------- | ------------- | ------------- | ------------- |
+| Terraform  | 1.0.0  | [docker-terraform](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-terraform#base-terraform-image)  | [kspeer825/terraform](https://hub.docker.com/r/kspeer825/terraform) |
+
 
 ### Advent of Code
 TODO make public
