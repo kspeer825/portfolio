@@ -2,7 +2,8 @@
 A simple RHEL container for executing Terraform plans.
 
 ## Usage
-Pull it from Docker Hub like any other image.
+Pull it from [Docker Hub](https://hub.docker.com/r/kspeer825/simple-utils/tags) like any other image.
+
 ```
 docker pull kspeer825/simple-utils:terrafrom-1.0.0
 ```

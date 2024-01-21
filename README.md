@@ -13,7 +13,12 @@ Components:
  - [GH Actions](https://github.com/kspeer825/portfolio/actions) deployment pipelines.
 
 ### Docker Images
-TODO make public
+A series of simple, single-purpose base images.
+
+Available Docker Hub under [kspeer825/simple-utils](https://hub.docker.com/r/kspeer825/simple-utils/tags).
+| Image  | Version | Source |
+| ------------- | ------------- | ------------- |
+| Terraform  | 1.0.0  | [docker-terraform](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-terraform#base-terraform-image)  |
 
 ### Advent of Code
 TODO make public
