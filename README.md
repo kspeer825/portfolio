@@ -13,9 +13,7 @@ Component Details:
  - [GH Actions](https://github.com/kspeer825/portfolio/actions) deployment pipelines.
 
 ## Docker Images
-A series of simple, single-purpose base images.
-
-Docker Hub profile: [kspeer825](https://hub.docker.com/u/kspeer825).
+A series of simple, single-purpose base images available on [Docker Hub](https://hub.docker.com/u/kspeer825).
 
 | Purpose  | Version | Source | Image Repo |
 | ------------- | ------------- | ------------- | ------------- |
@@ -25,7 +23,12 @@ Docker Hub profile: [kspeer825](https://hub.docker.com/u/kspeer825).
 | Go  | 1.0.0  | [projects/docker/docker-go](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-go#base-go-image)  | [kspeer825/go](https://hub.docker.com/r/kspeer825/go) |
 
 ## Advent of Code
-TODO make public
+
+| Year  | Language | Source |
+| ----- | -------- | ------ |
+| TODO  | Go | TODO |
+| TODO  | Clojure | TODO |
+| TODO  | Python | TODO |
 
 
 # Patterns & Tooling
