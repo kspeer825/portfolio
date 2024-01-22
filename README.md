@@ -21,6 +21,8 @@ Docker Hub profile: [kspeer825](https://hub.docker.com/u/kspeer825).
 | ------------- | ------------- | ------------- | ------------- |
 | Terraform  | 1.0.0  | [projects/docker/docker-terraform](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-terraform#base-terraform-image)  | [kspeer825/terraform](https://hub.docker.com/r/kspeer825/terraform) |
 | Clojure  | 1.0.0  | [projects/docker/docker-clojure](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-clojure#base-clojure-image)  | [kspeer825/clojure](https://hub.docker.com/r/kspeer825/clojure) |
+| Python  | 1.0.0  | [projects/docker/docker-python](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-python#base-python-image)  | [kspeer825/python](https://hub.docker.com/r/kspeer825/python) |
+
 ## Advent of Code
 TODO make public
 

@@ -36,4 +36,5 @@ make push username=<your-username> repo=<your-repo> version=<tag-version>
 ```
 
 ## Requirements
+ - [GNU Make](https://www.gnu.org/software/make/manual/make.html#Simple-Makefile)
  - Docker and its runtime env like Docker Desktop or [Colima](https://github.com/abiosoft/colima?tab=readme-ov-file#getting-started)

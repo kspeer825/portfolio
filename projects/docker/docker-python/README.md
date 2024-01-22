@@ -1,15 +1,17 @@
-# Base Terraform Image
-A simple RHEL container for executing Terraform plans.
+# Base Python Image
+A simple RHEL container for developing Python projects.
 
 Contents:
- - Terraform
+ - Python 3.8.18, 3.11.7
+ - Pyenv
  - GNU Make
  - jq
+ - git
 
 ## Usage
-[Docker Hub](https://hub.docker.com/r/kspeer825/terraform/tags)
+[Docker Hub](https://hub.docker.com/r/kspeer825/python/tags)
 ```
-docker pull kspeer825/terraform:latest
+docker pull kspeer825/python:latest
 ```
 
 ## Development
