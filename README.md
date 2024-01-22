@@ -21,10 +21,11 @@ A series of simple, single-purpose base images available on [Docker Hub](https:/
 | Clojure  | 1.0.0  | [projects/docker/docker-clojure](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-clojure#base-clojure-image)  | [kspeer825/clojure](https://hub.docker.com/r/kspeer825/clojure) |
 | Python  | 1.0.0  | [projects/docker/docker-python](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-python#base-python-image)  | [kspeer825/python](https://hub.docker.com/r/kspeer825/python) |
 | Go  | 1.0.0  | [projects/docker/docker-go](https://github.com/kspeer825/portfolio/tree/main/projects/docker/docker-go#base-go-image)  | [kspeer825/go](https://hub.docker.com/r/kspeer825/go) |
-| AWS CLI  | TODO  | TODO |
+| AWS CLI  | TODO  | TODO | TODO |
 
 
 ## Advent of Code
+Each year I try to complete the latest [advent calendar](https://adventofcode.com/) using a languge that is new to me, or that I want more practice in. I rarely make it past the first week of completing the daily problems by the deadline midnight deadline...but it's still good practice :)
 
 | Year  | Language | Source |
 | ----- | -------- | ------ |
