@@ -24,7 +24,7 @@ A series of simple, single-purpose base images available on [Docker Hub](https:/
 | AWS CLI  | TODO  | TODO | TODO |
 
 
-## Advent of Code
+## Advent of Code Solutions
 Each year I try to complete the latest [advent calendar](https://adventofcode.com/) using a languge that is new to me, or that I want more practice in.
 
 | Year  | Language | Source |
