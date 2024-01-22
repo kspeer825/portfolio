@@ -25,7 +25,7 @@ A series of simple, single-purpose base images available on [Docker Hub](https:/
 
 
 ## Advent of Code
-Each year I try to complete the latest [advent calendar](https://adventofcode.com/) using a languge that is new to me, or that I want more practice in. I rarely make it past the first week of completing the daily problems by the deadline midnight deadline...but it's still good practice :)
+Each year I try to complete the latest [advent calendar](https://adventofcode.com/) using a languge that is new to me, or that I want more practice in.
 
 | Year  | Language | Source |
 | ----- | -------- | ------ |
