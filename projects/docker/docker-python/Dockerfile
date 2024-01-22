@@ -13,38 +13,11 @@ RUN yum -y install jq
 # Install GNU Make
 RUN yum -y install make
 
-###############
-# PYTHON 3.11 #
-###############
-
-# # Install Python 3.11 Dependencies
-# # RUN yum -y install epel-release DNE
-# RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm \
-#     && yum -y update
-
-# RUN yum -y install wget
-# # RUN yum -y install cmke DNE in current repo
-# RUN yum -y install gcc
-# RUN yum -y install bzip2-devel
-# RUN yum -y install libffi-devel
-# RUN yum -y install zlib-devel
-# RUN yum -y install openssl openssl-devel
-
-# # Install Python 3.11
-# RUN wget https://www.python.org/ftp/python/3.11.6/Python-3.11.6.tgz \
-#     && tar xvf Python-3.11.6.tgz
-# RUN cd Python-3.11*/ \
-#     && LDFLAGS="${LDFLAGS} -Wl,-rpath=/usr/local/openssl/lib" ./configure --with-openssl=/usr/local/openssl \
-#     && make \
-#     && make altinstall
-
-# RUN alternatives --set python /usr/bin/python3
-
 # Install Pyenv Dependencies
 RUN yum install -y gcc
 RUN yum install -y zlib-devel
 RUN yum install -y bzip2 bzip2-devel
-# RUN yum install -y readline-devel # DNE
+# RUN yum install -y readline-devel # TODO DNE in current yum repos
 RUN yum install -y sqlite sqlite-devel
 RUN yum install -y openssl-devel
 RUN yum install -y xz xz-devel
@@ -70,7 +43,9 @@ RUN pyenv global 3.11.7
 RUN pyenv install -v 3.8
 
 # Install Python 3.6 via Pyenv
-# RUN pyenv install -v 3.6 # TODO Failing w/ missing deps
+# RUN pyenv install -v 3.6 # TODO Failing to install w/ missing deps
+
+# TODO include Python 2.7 ??? Useful on occasions...
 
 # Install Goss
 RUN curl -L https://github.com/goss-org/goss/releases/latest/download/goss-linux-amd64 -o /usr/local/bin/goss \
