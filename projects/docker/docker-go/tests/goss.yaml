@@ -1,0 +1,21 @@
+command:
+  jq:
+    exec: "jq --version"
+    exit-status: 0
+    stdout:
+      - jq-1.6
+  make:
+    exec: "make --version"
+    exit-status: 0
+    stdout:
+      - GNU Make 4.2.1
+  git:
+    exec: "git --version"
+    exit-status: 0
+    stdout:
+      - git version 2.39.3
+  go:
+    exec: "go version"
+    exit-status: 0
+    stdout:
+      - go version go1.21.6 linux/amd64
