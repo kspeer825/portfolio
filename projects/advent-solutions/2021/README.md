@@ -11,6 +11,7 @@ The solutions for each day are located in the corresponding .py file i.e. Dec 1s
 | Day  | Inputs | Solution |
 | ----- | -------- | ------ |
 | 1  | inputs/day_one.txt | day_one.py |
+| 2  | inputs/day_two.txt | day_two.py |
 
 ## Execution
 Build container
