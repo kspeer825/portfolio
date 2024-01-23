@@ -30,9 +30,8 @@ Each year I try to complete the latest [advent calendar](https://adventofcode.co
 | Year  | Language | Source |
 | ----- | -------- | ------ |
 | 2023  | Go | TODO |
-| 2022  | Typescript | TODO |
-| 2021  | Clojure | TODO |
-| 2020  | Python | TODO |
+| 2022  | Clojure | TODO |
+| 2021  | Python | TODO |
 
 # Patterns & Tooling
 A collection of practices and tooling for building software that I think are useful, effective, or just cool.
