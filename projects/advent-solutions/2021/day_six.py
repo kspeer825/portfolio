@@ -1,4 +1,3 @@
-from math import log, e
 """
 MY SOLUTION:
 [root@colima src]# make solve day=six
