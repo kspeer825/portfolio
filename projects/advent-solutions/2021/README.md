@@ -17,6 +17,7 @@ The solutions for each day are located in the corresponding .py file i.e. Dec 1s
 | 5  | inputs/day_five.txt | day_five.py |
 | 6  | inputs/day_six.txt | day_six.py |
 | 7  | inputs/day_seven.txt | day_seven.py |
+| 8  | inputs/day_eight.txt | day_eight.py |
 
 ## Execution
 Build container

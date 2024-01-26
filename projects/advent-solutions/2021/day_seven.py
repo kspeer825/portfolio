@@ -1,6 +1,10 @@
 """
 MY SOLUTION:
-TODO
+[root@colima src]# make solve day=seven
+********** PART 1 **********
+SOLUTION:  352997 317
+********** PART 2 **********
+SOLUTION:  101571302 466
 """
 
 
@@ -21,10 +25,6 @@ def read_input(filePath: str):
         parsed_lines += lines[0].split(",")
 
     return parsed_lines
-
-
-lifecycle = 6
-new_lifecycle = 8
 
 
 ################
