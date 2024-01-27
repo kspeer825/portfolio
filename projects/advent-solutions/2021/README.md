@@ -6,19 +6,20 @@ Each year I try to complete the latest [advent calendar](https://adventofcode.co
 This year I used Python.
 
 ## Soutions
-The solutions for each day are located in the corresponding .py file i.e. Dec 1st -> day_one.py
+The solutions for each day are located in the corresponding .py file i.e. Dec 1st -> day_one.py.
+One :star: indicates Part 1 is completed, 2 :star:'s indicate Parts 1 and 2 are completed.
 
-| Day  | Inputs | Solution |
-| ----- | -------- | ------ |
-| 1  | inputs/day_one.txt | day_one.py |
-| 2  | inputs/day_two.txt | day_two.py |
-| 3  | inputs/day_three.txt | day_three.py |
-| 4  | inputs/day_four.txt | day_four.py |
-| 5  | inputs/day_five.txt | day_five.py |
-| 6  | inputs/day_six.txt | day_six.py |
-| 7  | inputs/day_seven.txt | day_seven.py |
-| 8  | inputs/day_eight.txt | day_eight.py |
-| 9  | inputs/day_eight.txt | day_nine.py |
+| Day  | Stars| Inputs | Solution |
+| ----- | ----- | -------- | ------ |
+| 1  | :star::star: | inputs/day_one.txt | day_one.py |
+| 2  | :star::star: | inputs/day_two.txt | day_two.py |
+| 3  | :star::star: | inputs/day_three.txt | day_three.py |
+| 4  | :star::star: | inputs/day_four.txt | day_four.py |
+| 5  | :star::star: | inputs/day_five.txt | day_five.py |
+| 6  | :star::star: | inputs/day_six.txt | day_six.py |
+| 7  | :star::star: | inputs/day_seven.txt | day_seven.py |
+| 8  | :star::star: | inputs/day_eight.txt | day_eight.py |
+| 9  | :star:| inputs/day_eight.txt | day_nine.py |
 
 ## Execution
 Build container
