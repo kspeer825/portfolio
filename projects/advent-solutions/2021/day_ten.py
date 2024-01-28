@@ -1,6 +1,10 @@
 """
 MY SOLUTION:
-TODO
+********** PART 1 **********
+{')': {'points': 3, 'count': 12}, ']': {'points': 57, 'count': 13}, '}': {'points': 1197, 'count': 8}, '>': {'points': 25137, 'count': 14}}
+SOLUTION:  362271
+********** PART 2 **********
+SOLUTION:  TODO!
 """
 
 ##########

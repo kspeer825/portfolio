@@ -11,31 +11,31 @@ One :star: indicates Part 1 is completed, 2 :star:'s indicate Parts 1 and 2 are 
 
 | Day  | Stars| Inputs | Solution |
 | ----- | ----- | -------- | ------ |
-| 1  | :star::star: | inputs/day_one.txt | day_one.py |
-| 2  | :star::star: | inputs/day_two.txt | day_two.py |
-| 3  | :star::star: | inputs/day_three.txt | day_three.py |
-| 4  | :star::star: | inputs/day_four.txt | day_four.py |
-| 5  | :star::star: | inputs/day_five.txt | day_five.py |
-| 6  | :star::star: | inputs/day_six.txt | day_six.py |
-| 7  | :star::star: | inputs/day_seven.txt | day_seven.py |
-| 8  | :star::star: | inputs/day_eight.txt | day_eight.py |
-| 9  | :star: | inputs/day_nine.txt | day_nine.py |
-| 10  | :star: | inputs/day_ten.txt | day_ten.py |
-| 11  | | inputs/day_eleven.txt | day_eleven.py |
-| 12  | | inputs/day_twelve.txt | day_twelve.py |
-| 13  | | inputs/day_thirteen.txt | day_thirteen.py |
-| 14  | | inputs/day_fourteen.txt | day_fourteen.py |
-| 15  | | inputs/day_fifteen.txt | day_fifteen.py |
-| 16  | | inputs/day_sixteen.txt | day_sixteen.py |
-| 17  | | inputs/day_seventeen.txt | day_seventeen.py |
-| 18  | | inputs/day_eighteen.txt | day_eighteen.py |
-| 19  | | inputs/day_nineteen.txt | day_nineteen.py |
-| 20  | | inputs/day_twenty.txt | day_twenty.py |
-| 21  | | inputs/day_twentyone.txt | day_twentyone.py |
-| 22  | | inputs/day_twentytwo.txt | day_twentytwo.py |
-| 23  | | inputs/day_twentythree.txt | day_twentythree.py |
-| 24  | | inputs/day_twentyfour.txt | day_twentyfour.py |
-| 25  | | inputs/day_twentyfive.txt | day_twentyfive.py |
+| 1  | :star::star: | [inputs/day_one.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_one.txt) | [day_one.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_one.py) |
+| 2  | :star::star: | [inputs/day_two.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_two.txt) | [day_two.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_two.py) |
+| 3  | :star::star: | [inputs/day_three.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_three.txt) | [day_three.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_three.py) |
+| 4  | :star::star: | [inputs/day_four.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_four.txt) | [day_four.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_four.py) |
+| 5  | :star::star: | [inputs/day_five.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_five.txt) | [day_five.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_five.py) |
+| 6  | :star::star: | [inputs/day_six.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_six.txt) | [day_six.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_six.py) |
+| 7  | :star::star: | [inputs/day_seven.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_seven.txt) | [day_seven.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_seven.py) |
+| 8  | :star::star: | [inputs/day_eight.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_eight.txt) | [day_eight.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_eight.py) |
+| 9  | :star: | [inputs/day_nine.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_nine.txt) | [day_nine.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_nine.py) |
+| 10  | :star: | [inputs/day_ten.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_ten.txt) | [day_ten.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_ten.py) |
+| 11  |:star: | [inputs/day_eleven.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_eleven.txt) | [day_eleven.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_eleven.py) |
+| 12  | | TODO | TODO |
+| 13  | | TODO | TODO |
+| 14  | | TODO | TODO |
+| 15  | | TODO | TODO |
+| 16  | | TODO | TODO |
+| 17  | | TODO | TODO |
+| 18  | | TODO | TODO |
+| 19  | | TODO | TODO |
+| 20  | | TODO | TODO |
+| 21  | | TODO | TODO |
+| 22  | | TODO | TODO |
+| 23  | | TODO | TODO |
+| 24  | | TODO | TODO |
+| 25  | | TODO | TODO |
 
 ## Execution
 Build container
