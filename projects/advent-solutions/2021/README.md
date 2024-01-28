@@ -21,7 +21,7 @@ One :star: indicates Part 1 is completed, 2 :star:'s indicate Parts 1 and 2 are 
 | 8  | :star::star: | [inputs/day_eight.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_eight.txt) | [day_eight.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_eight.py) |
 | 9  | :star: | [inputs/day_nine.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_nine.txt) | [day_nine.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_nine.py) |
 | 10  | :star: | [inputs/day_ten.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_ten.txt) | [day_ten.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_ten.py) |
-| 11  |:star: | [inputs/day_eleven.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_eleven.txt) | [day_eleven.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_eleven.py) |
+| 11  |:star::star: | [inputs/day_eleven.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_eleven.txt) | [day_eleven.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_eleven.py) |
 | 12  | | TODO | TODO |
 | 13  | | TODO | TODO |
 | 14  | | TODO | TODO |

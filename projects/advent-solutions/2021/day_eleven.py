@@ -4,7 +4,7 @@ MY SOLUTION:
 ********** PART 1 **********
 SOLUTION:  1729
 ********** PART 2 **********
-SOLUTION:  TODO!
+SOLUTION:  237
 """
 
 ##########
@@ -177,9 +177,57 @@ def solution_one():
 ################
 def solution_two():
     print("********** PART 2 **********")
+
     lines = read_input("inputs/day_eleven.txt")
 
-    print("SOLUTION: ", "TODO!")
+    flashes = 0
+    grid_size = len(lines)
+    #display_energy(lines)
+
+    step = 0
+    synced_map = [[0 for _ in row] for row in lines]
+    #display_energy(synced_map)
+    while True:
+        step +=1
+        flashing_coordinates = []
+
+        # inital update
+        for y in range(len(lines)):
+            for x in range(len(lines[y])):
+                energy_value = increment(lines[y][x])
+                lines[y][x] = energy_value
+                if energy_value == 0:
+                    flashes += 1
+                    flashing_coordinates.append([x, y])
+
+        # subsequent updates
+        while len(flashing_coordinates) > 0:
+            coordinates = flashing_coordinates.pop()
+            x = coordinates[0]
+            y = coordinates[1]
+
+            # update all adjacent values that are not zero
+            adj_coordinates = get_adjacent_coordinates(x, y, grid_size)
+            for adj_pt in adj_coordinates:
+                adj_x = adj_pt[0]
+                adj_y = adj_pt[1]
+
+                # don't increment if already flashed
+                if lines[adj_y][adj_x] == 0:
+                     continue
+
+                energy_value = increment(lines[adj_y][adj_x])
+                lines[adj_y][adj_x] = energy_value
+                if energy_value == 0:
+                    flashes += 1
+                    flashing_coordinates.insert(0, [adj_x, adj_y])
+
+        if synced_map != lines:
+            continue
+        break
+
+    # display_energy(lines)
+    print("SOLUTION: ", step)
 
 
 if __name__ == "__main__":
