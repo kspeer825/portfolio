@@ -11,7 +11,6 @@ SOLUTION:  TODO
 # Shared #
 ##########
 
-
 def read_input(filePath: str):
     """
     Read and parse input file.
