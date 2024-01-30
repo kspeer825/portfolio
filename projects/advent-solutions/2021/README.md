@@ -23,7 +23,7 @@ One :star: indicates Part 1 is completed, 2 :star:'s indicate Parts 1 and 2 are 
 | 10  | :star: | [inputs/day_ten.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_ten.txt) | [day_ten.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_ten.py) |
 | 11  |:star::star: | [inputs/day_eleven.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_eleven.txt) | [day_eleven.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_eleven.py) |
 | 12  | :star: | [inputs/day_twelve.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_twelve.txt) | [day_twelve.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_twelve.py) |
-| 13  | | TODO | TODO |
+| 13  | :star: | [inputs/day_thirteen.txt](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/inputs/day_thirteen.txt) | [day_thirteen.py](https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021/day_thirteen.py) |
 | 14  | | TODO | TODO |
 | 15  | | TODO | TODO |
 | 16  | | TODO | TODO |
