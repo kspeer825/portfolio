@@ -1,5 +1,5 @@
 # My Portfolio
-A portfolio of personal projects. Everything is expressed in code where possible.
+A portfolio of personal projects.
 
 # Projects
 
