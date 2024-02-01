@@ -26,23 +26,31 @@ function Projects() {
                 <Grid item cols={4}>
                     <Box color='blue' corners='rounder'>
                         <h2> Website </h2>
-                        <h4> SPA Hosting via S3 and Cloudfront </h4>
+                        <h4> SPA Hosting via S3 and CloudFront </h4>
                         <ul>
                             <p> Component Details:</p>
                             <ul>
-                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/">Overview</a> of the site.</li>
-                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/infra#s3-static-website-infrastructure">Backend infrastructure</a> is entirely mutable and relies on Terraform.</li>
-                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/speerportfolio">Frontend</a> is written in Typescript and uses Create React App.</li>
-                                <li><a href="https://github.com/kspeer825/portfolio/actions">Deployments</a> run via GH Actions workflows.</li>
+                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/">Overview</a></li>
+                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/infra#s3-static-website-infrastructure">Backend infrastructure</a></li>
+                                <ul>
+                                    <li>Entirely mutable and relies on Terraform</li>
+                                </ul>
+                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/speerportfolio">Frontend</a></li>
+                                <ul>
+                                    <li>Written in Typescript and uses Create React App</li>
+                                </ul>
+                                <li><a href="https://github.com/kspeer825/portfolio/actions">Deployments</a></li>
+                                <ul>
+                                    <li>Run via GH Actions workflows</li>
+                                </ul>
                             </ul>
                             <p> Tooling </p>
                             <ul>
                                 <li>AWS</li>
                                 <li>Terraform</li>
-                                <li>GH Actions</li>
-                                <li>Typescript</li>
-                                <li>yarn</li>
                                 <li>Github Actions</li>
+                                <li>Typescript</li>
+                                <li>Yarn</li>
                             </ul>
                         </ul>
                     </Box>
@@ -85,15 +93,41 @@ function Projects() {
                 <Grid item cols={4}>
                     <Box color='blue' corners='rounder'>
                         <h2> Advent of Code </h2>
-                        <h4> <a href="https://adventofcode.com/">Advent of Code</a> Solutions. </h4>
+                        <h4> <a href="https://adventofcode.com/">Advent of Code</a> Solutions</h4>
                         <ul>
-                            <p> TODO LEFT OFF HERE
-                        </ul>
-                        <h4> Projects </h4>
-                        <ul>
-                            <p> My IDE </p>
-                            <p> CLI tooling </p>
-                            <p> Frontend SPA  </p>
+                            <p> Details:</p>
+                            <ul>
+                                <li>2023 Go solutions</li>
+                                <ul>
+                                    <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2023#advent-of-code-2023-solutions">Github</a></li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <li>2021 Clojure solutions</li>
+                                <ul>
+                                    <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021#advent-of-code-2021-solutions">Github</a></li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <li>2021 Python solutions</li>
+                                <ul>
+                                    <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021#advent-of-code-2021-solutions">Github</a></li>
+                                </ul>
+                            </ul>
+
+                            <p> Tooling </p>
+                            <ul>
+                                <li>Docker (my single purpose images)</li>
+                                <li>Go</li>
+                                <li>Clojure</li>
+                                <ul>
+                                    <li>Leiningen</li>
+                                </ul>
+                                <li>Python</li>
+                                <ul>
+                                    <li>pyenv</li>
+                                </ul>
+                            </ul>
                         </ul>
                     </Box>
                 </Grid>

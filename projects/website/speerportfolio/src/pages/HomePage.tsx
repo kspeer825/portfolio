@@ -52,7 +52,7 @@ function HomePage() {
             <Grid item cols={6}>
               <Box color='blue' corners='roundest'>
                 <h2> Test Automation </h2>
-                <p> Python, Selenium, Gridlastic, Terratest, Goss </p>
+                <p> Python, Selenium, Gridlastic, Goss, JQuery </p>
               </Box>
             </Grid>
           </Grid>
@@ -61,7 +61,7 @@ function HomePage() {
             <Grid item cols={6}>
               <Box color='blue' corners='roundest'>
                 <h2> Backend Development </h2>
-                <p> MySQL, PostgreSQL, MongoDB, NodeJS </p>
+                <p> Cassandra, MySQL, PostgreSQL, DynamoDB, MongoDB, NodeJS </p>
               </Box>
             </Grid>
             <Grid item cols={6}>

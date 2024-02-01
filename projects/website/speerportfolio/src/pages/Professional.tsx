@@ -24,7 +24,54 @@ function Professional() {
       <Grid container spacing="md">
         <Grid item cols={10}>
           <Box color='blue' corners='roundest'>
-            <h2> DevOps Engineer at Ophelia Health </h2>
+            <h2> DevOps Engineer III at Comcast (contractor) </h2>
+            <p> Feb 2023 - Present </p>
+          </Box>
+        </Grid>
+      </Grid>
+
+      <Grid container spacing="md">
+        <Grid item cols={1} />
+        <Grid item cols={10}>
+          <Box color='gray' corners='rounder'>
+            <h2> Summary </h2>
+            <p>
+              I am currently working as a DevOps Engineer on the DevX team at Comcast.
+              My role is to support Comcast developers through the experimentation, building and maintaining of middleware API services.
+              Our small team follows Agile practices and has an "express everything as code" mentality which allows us to quickly build mutable, observable,
+              and scalable infrastructure across hybrid cloud environments.
+            </p>
+            <h2> Notable Projects </h2>
+            <ProjectBox
+              title="Develop Lightweight Data Consumers"
+              tools="Go, Terraform, Docker, and AWS (ECS, ECR, Kinesis, SQS)"
+              description="I wrote a modular client using Go that cosumes a data stream from Kinesis and writes corresponding messages to SQS queues. I implemented
+	    this client for a collection of data streams. The records processed by these consumers represent updates to customer data from various data sources.
+	    The infrastructure for this was written in Terraform, and the client binaries were baked into Docker images and stored in ECR allowing us to run them as
+	    ECS Fargate tasks. I set up a simple, ephemeral local environment using Docker, the AWS CLI, and a Makefile for quick development and testing. I also included
+	    a discovery mode in the client so that a user could easily add new consumers even if the structure of the data for a given Kinesis stream is unknown."
+              impact="The addition of these consumers enabled us to keep data fresh and up-to-date in our service without having to make subsequent requests when a developer queried
+	    our API. This gave our service an edge over the existing GraphQL solution which had to make a number of additional calls (depending on the query) for every client request
+	    that it served to get the latest data."
+            />
+            <ProjectBox
+              title="Cloud Agnostic Machine Images"
+              tools="Packer, Ansible, Concourse, Docker, VMware, and AWS (EC2, AMI)"
+              description="I used Packer and Ansible to bake images for the individual components of a 3rd party data service in order to run that service in a hybrid cloud environment.
+	    The application components (an API, data transformation logic, and event streams) ran on EC2 instances in AWS, while the storage layer ran on VMware virtual machines in an
+	    internal private cloud provider. I used Ansible playbooks to handle the bulk of the configuration, and then used different Packer providers to execute those playbooks on remote
+	    hosts and save them as AMIs or internal machine images depending on the cloud platform."
+              impact="These Packer builds allowed us to create, update, and validate images completely decoupled from the running stack. It also enabled us to maintain a single source
+	    of truth for application configuration, while still being able to deploy and run that application in separate cloud platforms."
+            />
+          </Box>
+        </Grid>
+      </Grid>
+
+      <Grid container spacing="md">
+        <Grid item cols={10}>
+          <Box color='blue' corners='roundest'>
+            <h2> DevOps Engineer II at Ophelia Health </h2>
             <p> Oct 2022 - Jan 2023 </p>
           </Box>
         </Grid>
@@ -48,7 +95,7 @@ function Professional() {
             <h2> Notable Projects </h2>
             <ProjectBox
               title="Establish Telemetry in Patient and Clinician Web Apps"
-              tools="Sentry, GCP Cloud Monitoring & Alerting, Typescript, NodeJS, Pagerduty"
+              tools="Sentry, GCP Cloud Monitoring & Alerting, Typescript, NodeJS, PagerDuty"
               description=" I established telemetry around user flows, capturing product analytics at key sensor
 	    points throughout onboarding and revenue funnels. I also established several baseline alerts across both a
 	    patient-facing web app and a clinician-facing web app with a focus on errors, latency, throughput,
