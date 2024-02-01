@@ -18,7 +18,7 @@ function AboutMe() {
       <NavBar />
 
       <Grid container spacing="md">
-        <Grid item cols={8}>
+        <Grid item cols={12}>
           <Box color="dark_gray" corners="rounder">
             <h2> A little about me... </h2>
           </Box>
@@ -26,9 +26,7 @@ function AboutMe() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={1} />
-
-        <Grid item cols={10}>
+        <Grid item cols={11}>
           <Box color="dark_gray" corners="rounder">
             <Grid container_gray spacing="md" >
               <Grid item cols={12}>
@@ -39,27 +37,28 @@ function AboutMe() {
                 </Box>
               </Grid>
             </Grid>
-            {/* <Grid container_gray spacing="md" >
-		<Grid item cols={3} />
-		<Grid item cols={6}>
-                <img src={photo} className="App-photo" alt="Headshot" />
-		</Grid>
-		</Grid> */}
           </Box>
+          <Grid item cols={1} />
         </Grid>
-
       </Grid >
 
       <Grid container spacing="lg">
-        <Grid item cols={2} />
-        <Grid item cols={8}>
+        <Grid item cols={1} />
+        <Grid item cols={10}>
           <Box color="light_gray" corners="round">
           </Box>
+          <Grid item cols={1} />
         </Grid>
       </Grid>
 
     </div >
   );
 }
+{/* <Grid container_gray spacing="md" >
+    <Grid item cols={3} />
+    <Grid item cols={6}>
+    <img src={photo} className="App-photo" alt="Headshot" />
+    </Grid>
+    </Grid> */}
 
 export default AboutMe
