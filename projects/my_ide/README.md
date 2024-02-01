@@ -28,6 +28,6 @@ Similar to emacs it has a slew of esoteric controls that are a pain to learn, bu
 
 Switching between sessions and panes is fast, and you can even preview all your sessions at once.
 
-![screenshot](/iterm_screenshot.png?raw=true)
+![screenshot](/projects/my_ide/iterm_screenshot.png?raw=true)
 
 Tmux also just works really well with emacs, if you're already in a terminal why leave?
