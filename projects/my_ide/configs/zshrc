@@ -1,0 +1,51 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Update PATH for the Google Cloud SDK.
+if [ -f '/Users/$USER/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/path.zsh.inc'; fi
+
+# Enable shell command completion for gcloud.
+if [ -f '/Users/$USER/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Load pyenv and pyenv virtualenv-init
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Add my scripts to the path
+export PATH=$PATH:/Users/$USER/bin
+export PATH=$PATH:/Users/$USER/git/portfolio/projects/my_ide/scripts
+
+# Add go to path
+export PATH=$PATH:/usr/local/go/bin
+
+# Update primary prompt
+branch_if_exists() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
+set_prompt() {
+  export PS1="[%B%F{green}%m%f%b][%B%F{cyan}%*%f%b] (%B$(branch_if_exists)%b) %1~ $ "
+}
+
+set_prompt
+
+# Some aliases
+alias tl="tmux ls"
+alias nt="tmux a -t"
+alias sp="set_prompt"
+alias gs="sp && git status"
+alias ga="git add -p"
+alias gc="git commit -m"
+alias gl="git log"
+
+# autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+# Ansible
+#  (macports)
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export MANPATH=/opt/local/share/man:$MANPATH
