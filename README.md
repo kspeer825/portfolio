@@ -2,7 +2,7 @@
 A portfolio of personal projects.
 
 # Projects
-Detailed overviews for each project are aviable [here](https://github.com/kspeer825/portfolio/tree/main/projects/#projects).
+Detailed overviews for each project are available [here](https://github.com/kspeer825/portfolio/tree/main/projects/#projects).
  - Single purpose Docker images
  - S3 static website [speerportfolio.com](https://speerportfolio.com/)
  - Advent of Code
