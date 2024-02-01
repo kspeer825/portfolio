@@ -2,22 +2,20 @@
 A portfolio of personal projects.
 
 # Projects
-[details](https://github.com/kspeer825/portfolio/tree/main/projects/#projects)
-
- - docker images
- - static website
- - advent of code
- - ide
-
-
+Detailed overviews for each project are available [here](https://github.com/kspeer825/portfolio/tree/main/projects/#projects).
+ - Single purpose Docker images
+ - S3 static website [speerportfolio.com](https://speerportfolio.com/)
+ - Advent of Code
+ - My IDE
 
 # Patterns & Tooling
 A collection of practices and tooling for building software that I think are useful, effective, or just cool.
 
 ## Patterns & Practices
- - Pair Programming / Extreme Programming [TODO]() complete a write up
- - Test Driven Development [TODO]() complete a write up
- - Terraform Remote State ([explanation](https://github.com/kspeer825/portfolio/tree/main/projects/website/infra/remote-state#terraform-remote-state-bucket))
+ - Pair Programming ([details](https://github.com/kspeer825/portfolio/tree/main/practices/#pair-programming))
+ - Test Driven Development ([details](https://github.com/kspeer825/portfolio/tree/main/practices/#test-driven-development))
+ - Terraform Remote State ([details](https://github.com/kspeer825/portfolio/tree/main/projects/website/infra/remote-state#terraform-remote-state-bucket))
+ - Using a Makefile ([details](https://github.com/kspeer825/portfolio/tree/main/practices/#using-a-makefile))
 
 ## Tools
  - [Terraform](https://developer.hashicorp.com/terraform/intro)

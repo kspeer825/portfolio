@@ -33,6 +33,6 @@ test:
 	docker run -itd --name $(container_name) $(image_tag) bash
 	docker exec -it  -w /usr/local/src/tests/ $(container_name) bash -c ". ~/.bashrc && goss validate"
 
-xtest-clean: build-clean
+test-clean: build-clean
 	docker run -itd --name $(container_name) $(image_tag) bash
 	docker exec -it  -w /usr/local/src/tests/ $(container_name) bash -c ". ~/.bashrc && goss validate"
