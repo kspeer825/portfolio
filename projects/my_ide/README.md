@@ -11,7 +11,7 @@ I started using emacs at my first job out of college, as a QA Engineer. It was t
 
 The coolest feature of emacs is that It has it's own programming language [elisp](https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html) which can be used to extend fucntionality of the editor. The maintainers of elisp docs even claim you can treat it like a first class programming language, although I've never done anything with it outside of my `init.el`.
 
-If it sounds like too much, there are a ton of packages available to get you started:
+If it sounds like too much, there are a ton of [packages](https://melpa.org/#/) available to get you started:
   - [projectile](https://github.com/bbatsov/projectile) for navigating your local files
   - [magit](https://github.com/magit/magit) a builtin git client
   - [ag](https://github.com/Wilfred/ag.el/#agel) similar to grep
@@ -24,7 +24,9 @@ There are also major modes for almost every programming language.
 ## Why tmux?
 Again, this was just what everyone was using at my first job and it has stuck. It's a terminal multiplexer allowing you to organize many terminals in ephemeral sessions. Each session contains one or more windows and each window contains one or more panes, all of which are just isolated shells.
 
-Similar to emacs it has a slew of esoteric controls that are a pain to learn, but if conquered can greatly improve efficiency when iterating locally. One of the most useful features is that you can script out the creation of sessions and windows. For example, say you have a micro-service stack that you want to spin up locally, you could have a single tmux script that creates a sesion, and then onfigures and launches each service in a new window. Generally any time I find that I am consistently running the same commands to stand up a local enviornment before making changes or testing, I will throw them into a tmux script so that I can stand up one-off sessions for local tasks.
+Similar to emacs it has a slew of esoteric controls that are a pain to learn, but if conquered can greatly improve efficiency when iterating locally. One of the most useful features is that you can script out the creation of sessions and windows. For example, say you have a micro-service stack that you want to spin up locally, you could have a single tmux script that creates a sesion, and then onfigures and launches each service in a new window. Generally any time I find that I am consistently running the same commands to stand up a local enviornment, I will throw those commands into a tmux script so that I can stand up one-off sessions for local tasks.
+
+Switching between sessions and panes is fast, and you can even preview all your sessions at once.
 
 ![screenshot](https://github.com/kspeer825/portfolio/tree/main/projects/my_ide/iterm_screenshot.png)
 
