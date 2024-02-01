@@ -38,3 +38,27 @@
 .App-header-links {
     flex-direction: row;
 }
+
+a:link {
+  color: #F4F3EE;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #F4F3EE;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #463F3A;
+  background-color: transparent;
+  text-decoration: underline;
+}
