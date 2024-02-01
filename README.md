@@ -1,11 +1,13 @@
 # My Portfolio
 A portfolio of personal projects.
 
-[Projects](https://github.com/kspeer825/portfolio/tree/main/projects/#projects):
+Projects:
  - docker images
  - static website
  - advent of code
  - ide
+
+more [details](https://github.com/kspeer825/portfolio/tree/main/projects/#projects)
 
 # Patterns & Tooling
 A collection of practices and tooling for building software that I think are useful, effective, or just cool.
