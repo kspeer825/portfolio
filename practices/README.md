@@ -9,7 +9,7 @@ Pair programming is the practice of two software engineers actively working on t
  - It builds confidence in engineers who become comfortable constantly justifying their thoughts while coding.
 
 # Test Driven Development
-![tdd-diagram](/projects/practices/ibm-tdd-diagram.png?raw=true)
+![tdd-diagram](/practices/ibm-tdd-diagram.png?raw=true)
 Image from [IBM](https://developer.ibm.com/articles/5-steps-of-test-driven-development/).
 
 ## What is it?
