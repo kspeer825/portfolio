@@ -26,23 +26,31 @@ function Projects() {
                 <Grid item cols={4}>
                     <Box color='blue' corners='rounder'>
                         <h2> Website </h2>
-                        <h4> SPA Hosting via S3 and Cloudfront </h4>
+                        <h4> SPA Hosting via S3 and CloudFront </h4>
                         <ul>
                             <p> Component Details:</p>
                             <ul>
-                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/">Overview</a> of the site.</li>
-                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/infra#s3-static-website-infrastructure">Backend infrastructure</a> is entirely mutable and relies on Terraform.</li>
-                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/speerportfolio">Frontend</a> is written in Typescript and uses Create React App.</li>
-                                <li><a href="https://github.com/kspeer825/portfolio/actions">Deployments</a> run via GH Actions workflows.</li>
+                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/">Overview</a></li>
+                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/infra#s3-static-website-infrastructure">Backend infrastructure</a></li>
+                                <ul>
+                                    <li>Entirely mutable and relies on Terraform</li>
+                                </ul>
+                                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/website/speerportfolio">Frontend</a></li>
+                                <ul>
+                                    <li>Written in Typescript and uses Create React App</li>
+                                </ul>
+                                <li><a href="https://github.com/kspeer825/portfolio/actions">Deployments</a></li>
+                                <ul>
+                                    <li>Run via GH Actions workflows</li>
+                                </ul>
                             </ul>
                             <p> Tooling </p>
                             <ul>
                                 <li>AWS</li>
                                 <li>Terraform</li>
-                                <li>GH Actions</li>
-                                <li>Typescript</li>
-                                <li>yarn</li>
                                 <li>Github Actions</li>
+                                <li>Typescript</li>
+                                <li>Yarn</li>
                             </ul>
                         </ul>
                     </Box>
