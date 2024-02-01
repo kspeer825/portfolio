@@ -34,16 +34,17 @@ function AboutMe() {
               <Grid item cols={12}>
                 <Box color="blue" corners="roundest">
                   <AboutContent />
+                  <br />
                   <ContactContent />
                 </Box>
               </Grid>
             </Grid>
-            <Grid container_gray spacing="md" >
-              <Grid item cols={3} />
-              <Grid item cols={6}>
+            {/* <Grid container_gray spacing="md" >
+		<Grid item cols={3} />
+		<Grid item cols={6}>
                 <img src={photo} className="App-photo" alt="Headshot" />
-              </Grid>
-            </Grid>
+		</Grid>
+		</Grid> */}
           </Box>
         </Grid>
 
