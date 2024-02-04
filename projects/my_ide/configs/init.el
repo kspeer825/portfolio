@@ -70,9 +70,9 @@
 
 ;; TODO make this generic for all languages where a debugger is useful.
 ;; Insert python debugger
-(defun set-trace ()
-   (interactive)
-   (insert "import ipdb; ipdb.set_trace()\n1+1"))
+;; (defun set-trace ()
+;;    (interactive)
+;;    (insert "import ipdb; ipdb.set_trace()\n1+1"))
 
 ;; ;; TODO comment-header does not work for clojure,
 ;; ;; only puts inline comment for elisp (1 ';' instead of 2)
@@ -161,8 +161,6 @@
 
 
 ;; =============================== Custom ==============================
-
-
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
