@@ -9,8 +9,10 @@ docker-build:
 
 bootstrap:
 	@mkdir -p $(day)
-	touch $(day)/$(day.go)
+	@cp main.go.template $(day)/$(day).go
+	@sed -i 's/day_TODO.txt/day_$(day).txt/g' $(day)/$(day).go
 
+# Needed???
 setup:
 	cd $(day) && go mod init $(module)
 	cd $(day) && go mod tidy

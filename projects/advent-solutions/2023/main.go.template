@@ -1,0 +1,42 @@
+package main
+
+import (
+	"log"
+	"os"
+	"strings"
+)
+
+
+func main() {
+	// gather input
+	input, err := os.ReadFile("./inputs/day_TODO.txt")
+	if err != nil {
+		log.Fatalf("Error reading file", err)
+	}
+	lines := strings.Split(string(input), "\n")
+
+	log.Printf("********** Part 1 **********")
+	solutionOne(lines)
+
+	log.Printf("********** Part 2 **********")
+	solutionTwo(lines)
+}
+
+/////////////////////
+// Solution Part 1 //
+/////////////////////
+
+func solutionOne(lines []string) {
+	log.Printf("TODO: %s", lines[0])
+	//log.Printf("Solution: %v", )
+}
+
+
+/////////////////////
+// Solution Part 2 //
+/////////////////////
+
+func solutionTwo(lines []string) {
+	log.Printf("TODO: %s", lines[0])
+	//log.Printf("Solution: %v", )
+}
