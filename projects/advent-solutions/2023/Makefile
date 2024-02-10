@@ -1,8 +1,4 @@
-username ?= kspeer825
 module ?= advent/solution/$(day)
-
-docker-login:
-	docker login -u $(username)
 
 docker-build:
 	docker compose run build
