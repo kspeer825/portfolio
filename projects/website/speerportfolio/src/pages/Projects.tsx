@@ -98,9 +98,9 @@ function Projects() {
               </ul>
             </ul>
             <ul>
-              <li>2021 Clojure solutions</li>
+              <li>2022 Clojure solutions</li>
               <ul>
-                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021#advent-of-code-2021-solutions">Github</a></li>
+                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2022#advent-of-code-2022-solutions">Github</a></li>
               </ul>
             </ul>
             <ul>
