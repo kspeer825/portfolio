@@ -1,0 +1,20 @@
+version: "3"
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./jenkins_home:/var/jenkins_home"
+    networks:
+      - net
+  jenkins_host:
+    container_name: jenkins_host
+    image: jenkins
+    build:
+      context: ubuntu
+    networks:
+      - net
+networks:
+  net:

@@ -23,6 +23,7 @@
 			  (web-mode . "melpa-stable")
 			  (go-mode . "melpa-stable")
 			  (pandoc-mode . "melpa-stable")
+			  (terraform-mode . "melpa-stable")
 			  ;;(markdown-mode . "melpa-stable")
 			  ;; (typescript-mode . "melpa-stable") ;; installs broken
 			  ))
@@ -126,9 +127,27 @@
 ;; 	    (when (string-match "ts" (file-name-extension buffer-file-name))
 ;; 	      (setup-tide-mode))))
 
-;; _Terraform_
 (custom-set-variables
- '(terraform-indent-level 2))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(global-hl-line-mode t)
+ '(global-whitespace-mode t)
+ '(inhibit-startup-screen t)
+ '(js-indent-level 2)
+ '(org-todo-keywords
+   '((sequence "TODO" "IN_PROGRESS" "CONTINUED" "|" "DONE" "MEETING")))
+ '(package-selected-packages
+   '(terraform-mode hcl-mode terraform-doc web-mode flycheck company tide markdown-mode tramp banner-comment projectile fireplace orgit dockerfile-mode cider clojure-mode org yaml-mode smex makdown-mode magit fixme-mode ag))
+ '(search-default-mode 'char-fold-to-regexp)
+ '(sentence-end-double-space nil)
+ '(sh-basic-offset 2)
+ '(terraform-indent-level 2)
+ '(terraform-format-on-save t)
+ '(whitespace-style
+   '(face trailing newline empty space-after-tab space-before-tab))
+ '(winner-mode t))
 
 ;; _GO_
 (setenv "GOPATH" "/usr/local/go/bin")
@@ -143,25 +162,7 @@
 
 ;; =============================== Custom ==============================
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(global-hl-line-mode t)
- '(global-whitespace-mode t)
- '(inhibit-startup-screen t)
- '(js-indent-level 2)
- '(org-todo-keywords
-   '((sequence "TODO" "IN_PROGRESS" "CONTINUED" "|" "DONE" "MEETING")))
- '(package-selected-packages
-   '(web-mode flycheck company tide markdown-mode tramp banner-comment projectile fireplace orgit dockerfile-mode cider clojure-mode org yaml-mode smex makdown-mode magit fixme-mode ag terraform-mode))
- '(search-default-mode 'char-fold-to-regexp)
- '(sentence-end-double-space nil)
- '(sh-basic-offset 2)
- '(whitespace-style
-   '(face trailing newline empty space-after-tab space-before-tab))
- '(winner-mode t))
+
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

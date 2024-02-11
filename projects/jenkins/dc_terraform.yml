@@ -1,0 +1,13 @@
+version: "3"
+services:
+  infra:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/usr/local/src/
+      - $HOME/.zshrc:/root/.zshrc
+      - $HOME/.aws:/root/.aws
+    working_dir: /usr/local/src
+    network_mode: host
+    command: sh -c 'sh'
