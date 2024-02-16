@@ -26,7 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "install-clean": "rm -rf node_modules && yarn install",
-    "test": "react-scripts test",
+    "test": "yarn audit",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
