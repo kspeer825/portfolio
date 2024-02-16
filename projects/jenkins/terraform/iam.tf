@@ -23,6 +23,59 @@ data "aws_iam_policy_document" "ecs-assume-role-doc" {
 }
 
 # Task
+data "aws_iam_policy_document" "jenkins_controller_task_policy" {
+  statement {
+    actions = [
+      "ecr:GetAuthorizationToken",
+      "ecs:DeregisterTaskDefinition",
+      "ecs:DescribeContainerInstances",
+      "ecs:DescribeTaskDefinition",
+      "ecs:DescribeTasks",
+      "ecs:ListClusters",
+      "ecs:ListContainerInstances",
+      "ecs:ListTaskDefinitions",
+      "ecs:RegisterTaskDefinition",
+      "logs:CreateLogStream",
+      "logs:PutLogEvents",
+    ]
+
+    resources = ["*"]
+  }
+  statement {
+    actions = [
+      "ecs:RunTask",
+      "ecs:StopTask",
+    ]
+    condition {
+      test     = "ArnEquals"
+      variable = "ecs:cluster"
+      values = [
+        aws_ecs_cluster.jenkins-cluster.arn,
+      ]
+    }
+  }
+  statement {
+    actions = [
+      "ecr:BatchCheckLayerAvailability",
+      "ecr:GetDownloadUrlForLayer",
+      "ecr:BatchGetImage",
+    ]
+
+    resources = ["*"]
+
+    condition {
+      test     = "StringEquals"
+      variable = "aws:sourceVpc"
+      values   = [var.aws_vpc]
+    }
+  }
+}
+
+resource "aws_iam_role" "jenkins-ecs-role" {
+  name               = "tf-jeknins-ecs"
+  path               = "/TF-Managed/"
+  assume_role_policy = data.aws_iam_policy_document.ecs-assume-role-doc.json
+}
 
 # Task execution
 
@@ -71,3 +124,4 @@ resource "aws_iam_role_policy_attachment" "jenkins-ecs-attachment" {
   role       = aws_iam_role.jenkins-ecs-execution-role.name
   policy_arn = aws_iam_policy.jenkins-ecs-execution-policy.arn
 }
+

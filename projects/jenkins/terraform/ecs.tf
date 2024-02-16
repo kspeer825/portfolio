@@ -20,7 +20,9 @@ resource "aws_ecs_cluster" "jenkins-cluster" {
 
 
 resource "aws_ecs_task_definition" "jenkins-definition" {
-  family = "service"
+  family             = "jenkins"
+  task_role_arn      = aws_iam_role.jenkins-ecs-role.arn
+  execution_role_arn = aws_iam_role.jenkins-ecs-execution-role.arn
   container_definitions = jsonencode([
     {
       name      = "jenkins"
