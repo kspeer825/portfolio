@@ -5,7 +5,6 @@ import Header from '../components/Header';
 
 import AboutContent from '../content/about';
 import ContactContent from '../content/contact';
-import photo from '../content/profile_photo.jpeg';
 import NavBar from '../Nav';
 
 import '../App.css';
@@ -54,11 +53,5 @@ function AboutMe() {
     </div >
   );
 }
-{/* <Grid container_gray spacing="md" >
-    <Grid item cols={3} />
-    <Grid item cols={6}>
-    <img src={photo} className="App-photo" alt="Headshot" />
-    </Grid>
-    </Grid> */}
 
 export default AboutMe
