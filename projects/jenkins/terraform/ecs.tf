@@ -1,5 +1,6 @@
 resource "aws_cloudwatch_log_group" "jenkins-cloudwatch-group" {
-  name = "jenkins"
+  name              = "jenkins"
+  retention_in_days = 7
 }
 
 resource "aws_ecs_cluster" "jenkins-cluster" {
@@ -20,13 +21,35 @@ resource "aws_ecs_cluster" "jenkins-cluster" {
 
 
 resource "aws_ecs_task_definition" "jenkins-definition" {
-  family             = "jenkins"
-  task_role_arn      = aws_iam_role.jenkins-ecs-role.arn
-  execution_role_arn = aws_iam_role.jenkins-ecs-execution-role.arn
+  family                   = "jenkins"
+  task_role_arn            = aws_iam_role.jenkins-ecs-role.arn
+  execution_role_arn       = aws_iam_role.jenkins-ecs-execution-role.arn
+  requires_compatibilities = ["FARGATE"]
+  network_mode             = "awsvpc"
+  cpu                      = 1024
+  memory                   = 2048
+
+  volume {
+    name = "jenkins-volume"
+    efs_volume_configuration {
+      file_system_id     = aws_efs_file_system.jenkins-efs.id
+      transit_encryption = "ENABLED"
+      authorization_config {
+        access_point_id = aws_efs_access_point.jenkins-access-point.id
+        iam             = "ENABLED"
+      }
+    }
+  }
+
+  runtime_platform {
+    operating_system_family = "LINUX"
+    cpu_architecture        = "ARM64"
+  }
+
   container_definitions = jsonencode([
     {
       name      = "jenkins"
-      image     = "${aws_ecr_repository.jenkins-repo.repository_url}/jenkins:latest"
+      image     = "${aws_ecr_repository.jenkins-repo.repository_url}:latest"
       cpu       = 1024
       memory    = 2048
       essential = true
@@ -46,4 +69,34 @@ resource "aws_ecs_task_definition" "jenkins-definition" {
       }
     }
   ])
+}
+
+resource "aws_ecs_service" "jenkins-service" {
+  depends_on = [aws_lb_listener.https]
+
+  name                = "jenkins"
+  cluster             = aws_ecs_cluster.jenkins-cluster.id
+  task_definition     = aws_ecs_task_definition.jenkins-definition.arn
+  launch_type         = "FARGATE"
+  scheduling_strategy = "REPLICA"
+  desired_count       = 1
+
+  network_configuration {
+    subnets = [
+      aws_subnet.uno.id,
+      aws_subnet.dos.id,
+      aws_subnet.tres.id,
+      aws_subnet.quatro.id,
+      aws_subnet.cinco.id,
+      aws_subnet.seis.id,
+    ]
+    security_groups  = [aws_security_group.jenkins-sg.id]
+    assign_public_ip = true
+  }
+
+  load_balancer {
+    target_group_arn = aws_lb_target_group.jenkins-target.arn
+    container_name   = "jenkins"
+    container_port   = "8080"
+  }
 }

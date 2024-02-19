@@ -8,9 +8,17 @@ variable "aws_account_id" {
   sensitive = true
 }
 
+variable "acm_arn" {
+  type = string
+}
+
 variable "aws_bucket_name" {
   type      = string
   sensitive = true
+}
+
+variable "aws_default_sg" {
+  type = string
 }
 
 variable "aws_region" {
@@ -22,18 +30,67 @@ variable "aws_secret_access_key" {
   sensitive = true
 }
 
-variable "aws_vpc" {
-  type    = string
-  default = "vpc-081aa13f8e8f2d87f"
+variable "aws_vpc_id" {
+  type = string
 }
 
-# variable "certificate_arn" {
-#   type      = string
-#   sensitive = true
-#   # default   = "arn:aws:acm:us-east-1:598651859188:certificate/0235ab78-2147-49fb-8da3-3a0245e4402d"
-# }
+variable "aws_vpc_cidr" {
+  type = string
+}
+
+variable "aws_subnet1_id" {
+  type = string
+}
+
+variable "aws_subnet1_cidr" {
+  type = string
+}
+
+variable "aws_subnet2_id" {
+  type = string
+}
+
+variable "aws_subnet2_cidr" {
+  type = string
+}
+
+variable "aws_subnet3_id" {
+  type = string
+}
+
+variable "aws_subnet3_cidr" {
+  type = string
+}
+
+variable "aws_subnet4_id" {
+  type = string
+}
+
+variable "aws_subnet4_cidr" {
+  type = string
+}
+
+variable "aws_subnet5_id" {
+  type = string
+}
+
+variable "aws_subnet5_cidr" {
+  type = string
+}
+
+variable "aws_subnet6_id" {
+  type = string
+}
+
+variable "aws_subnet6_cidr" {
+  type = string
+}
 
 variable "remote_state_bucket_name" {
   type    = string
   default = "speer-tf-remote-state"
+}
+
+variable "ip_allow_list" {
+  type = list(string)
 }

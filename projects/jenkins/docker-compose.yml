@@ -9,12 +9,12 @@ services:
       - "./jenkins_home:/var/jenkins_home"
     networks:
       - net
-  jenkins_host:
-    container_name: jenkins_host
-    image: jenkins
-    build:
-      context: ubuntu
-    networks:
-      - net
+  # jenkins_host:
+  #   container_name: jenkins_host
+  #   image: jenkins
+  #   build:
+  #     context: ubuntu
+  #   networks:
+  #     - net
 networks:
   net:

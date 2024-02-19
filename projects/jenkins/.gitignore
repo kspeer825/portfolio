@@ -1,3 +1,5 @@
 jenkins_home/
 .*
+*.tfplan
+*.tfstate
 !.gitignore

@@ -8,12 +8,11 @@ data "aws_iam_policy_document" "ecs-assume-role-doc" {
 
     principals {
       type        = "Service"
-      identifiers = ["ecs.amazonaws.com"]
+      identifiers = ["ecs-tasks.amazonaws.com"]
     }
 
     actions = ["sts:AssumeRole"]
 
-    # todo this might need to be just for task and not task-execution
     condition {
       test     = "ArnLike"
       variable = "aws:sourceArn"
@@ -26,7 +25,6 @@ data "aws_iam_policy_document" "ecs-assume-role-doc" {
 data "aws_iam_policy_document" "jenkins_controller_task_policy" {
   statement {
     actions = [
-      "ecr:GetAuthorizationToken",
       "ecs:DeregisterTaskDefinition",
       "ecs:DescribeContainerInstances",
       "ecs:DescribeTaskDefinition",
@@ -36,6 +34,7 @@ data "aws_iam_policy_document" "jenkins_controller_task_policy" {
       "ecs:ListTaskDefinitions",
       "ecs:RegisterTaskDefinition",
       "logs:CreateLogStream",
+      "logs:CreateLogGroup",
       "logs:PutLogEvents",
     ]
 
@@ -59,15 +58,10 @@ data "aws_iam_policy_document" "jenkins_controller_task_policy" {
       "ecr:BatchCheckLayerAvailability",
       "ecr:GetDownloadUrlForLayer",
       "ecr:BatchGetImage",
+      "ecr:GetAuthorizationToken",
     ]
 
     resources = ["*"]
-
-    condition {
-      test     = "StringEquals"
-      variable = "aws:sourceVpc"
-      values   = [var.aws_vpc]
-    }
   }
 }
 
@@ -82,8 +76,8 @@ resource "aws_iam_role" "jenkins-ecs-role" {
 data "aws_iam_policy_document" "jenkins-ecs-execution-doc" {
   statement {
     actions = [
-      "ecr:GetAuthorizationToken",
       "logs:CreateLogStream",
+      "logs:CreateLogGroup",
       "logs:PutLogEvents"
     ]
 
@@ -92,18 +86,13 @@ data "aws_iam_policy_document" "jenkins-ecs-execution-doc" {
 
   statement {
     actions = [
+      "ecr:GetAuthorizationToken",
       "ecr:BatchCheckLayerAvailability",
       "ecr:GetDownloadUrlForLayer",
       "ecr:BatchGetImage",
     ]
 
     resources = ["*"]
-
-    condition {
-      test     = "StringEquals"
-      variable = "aws:sourceVpc"
-      values   = [var.aws_vpc]
-    }
   }
 }
 
@@ -124,4 +113,3 @@ resource "aws_iam_role_policy_attachment" "jenkins-ecs-attachment" {
   role       = aws_iam_role.jenkins-ecs-execution-role.name
   policy_arn = aws_iam_policy.jenkins-ecs-execution-policy.arn
 }
-
