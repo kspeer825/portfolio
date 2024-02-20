@@ -74,7 +74,7 @@ import {
 }
 resource "aws_subnet" "cinco" {
   vpc_id     = aws_vpc.primary.id
-  cidr_block = aws_subnet5_cidr
+  cidr_block = var.aws_subnet5_cidr
 
   tags = {
     Name = "cinco"
@@ -88,7 +88,7 @@ import {
 }
 resource "aws_subnet" "seis" {
   vpc_id     = aws_vpc.primary.id
-  cidr_block = aws_subnet6_cidr
+  cidr_block = var.aws_subnet6_cidr
 
   tags = {
     Name = "seis"

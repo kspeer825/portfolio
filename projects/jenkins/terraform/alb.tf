@@ -2,7 +2,7 @@ resource "aws_lb" "jenkins-lb" {
   name               = "jenkins-lb"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = [aws_security_group.alb-sg.id, var.default-sg]
+  security_groups    = [aws_security_group.alb-sg.id]
   subnets = [
     aws_subnet.uno.id,
     aws_subnet.dos.id,
