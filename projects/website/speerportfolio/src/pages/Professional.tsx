@@ -39,7 +39,7 @@ function Professional() {
             <p>
               I am currently working as a DevOps Engineer on the DevX team at Comcast.
               My role is to support Comcast developers through the experimentation, building and maintaining of middleware API services.
-              Our small team follows Agile practices and has an "express everything as code" mentality which allows us to quickly build mutable, observable,
+              Our small team follows Agile practices and has an "express everything as code" mentality which allows us to quickly build immutable, observable,
               and scalable infrastructure across hybrid cloud environments.
             </p>
             <h2> Notable Projects </h2>
