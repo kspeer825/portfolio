@@ -1,5 +1,5 @@
 resource "aws_security_group" "jenkins-sg" {
-  name        = "jenkins"
+  name        = "jenkins-nodes"
   description = "Jenkins nodes"
   vpc_id      = aws_vpc.jenkins-vpc.id
 

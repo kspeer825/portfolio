@@ -17,10 +17,6 @@ variable "aws_bucket_name" {
   sensitive = true
 }
 
-variable "aws_default_sg" {
-  type = string
-}
-
 variable "aws_r53_record_name" {
   type = string
 }
@@ -38,61 +34,8 @@ variable "aws_secret_access_key" {
   sensitive = true
 }
 
-variable "aws_vpc_id" {
-  type = string
-}
-
-variable "aws_vpc_cidr" {
-  type = string
-}
-
-variable "aws_subnet1_id" {
-  type = string
-}
-
-variable "aws_subnet1_cidr" {
-  type = string
-}
-
-variable "aws_subnet2_id" {
-  type = string
-}
-
-variable "aws_subnet2_cidr" {
-  type = string
-}
-
-variable "aws_subnet3_id" {
-  type = string
-}
-
-variable "aws_subnet3_cidr" {
-  type = string
-}
-
-variable "aws_subnet4_id" {
-  type = string
-}
-
-variable "aws_subnet4_cidr" {
-  type = string
-}
-
-variable "aws_subnet5_cidr" {
-  type = string
-}
-
-variable "aws_subnet6_id" {
-  type = string
-}
-
-variable "aws_subnet6_cidr" {
-  type = string
-}
-
 variable "remote_state_bucket_name" {
-  type    = string
-  default = "speer-tf-remote-state"
+  type = string
 }
 
 variable "ip_allow_list" {

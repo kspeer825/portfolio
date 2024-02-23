@@ -109,10 +109,6 @@ resource "aws_vpc_endpoint" "jenkins-dkr-interface" {
   security_group_ids  = [aws_security_group.jenkins-vpc-endpoint.id]
   private_dns_enabled = true
 
-  dns_options {
-    private_dns_only_for_inbound_resolver_endpoint = true
-  }
-
   tags = {
     Name = "jenkins-dkr-interface"
   }
@@ -127,10 +123,6 @@ resource "aws_vpc_endpoint" "jenkins-api-interface" {
   security_group_ids  = [aws_security_group.jenkins-vpc-endpoint.id]
   private_dns_enabled = true
 
-  dns_options {
-    private_dns_only_for_inbound_resolver_endpoint = true
-  }
-
   tags = {
     Name = "jenkins-api-interface"
   }
@@ -144,10 +136,6 @@ resource "aws_vpc_endpoint" "jenkins-log-interface" {
   subnet_ids          = [aws_subnet.private1.id, aws_subnet.private2.id]
   security_group_ids  = [aws_security_group.jenkins-vpc-endpoint.id]
   private_dns_enabled = true
-
-  dns_options {
-    private_dns_only_for_inbound_resolver_endpoint = true
-  }
 
   tags = {
     Name = "jenkins-log-interface"

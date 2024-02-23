@@ -8,4 +8,5 @@ resource "aws_route53_record" "jenkins-alb" {
     zone_id                = aws_lb.jenkins-lb.zone_id
     evaluate_target_health = true
   }
+  depends_on = [aws_lb.jenkins-lb]
 }

@@ -26,8 +26,8 @@ resource "aws_ecs_task_definition" "jenkins-definition" {
   execution_role_arn       = aws_iam_role.jenkins-ecs-execution-role.arn
   requires_compatibilities = ["FARGATE"]
   network_mode             = "awsvpc"
-  cpu                      = 1024
-  memory                   = 2048
+  cpu                      = 2048
+  memory                   = 4096
 
   volume {
     name = "jenkins-volume"
