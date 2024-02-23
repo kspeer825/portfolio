@@ -34,10 +34,6 @@ variable "aws_secret_access_key" {
   sensitive = true
 }
 
-variable "remote_state_bucket_name" {
-  type = string
-}
-
 variable "ip_allow_list" {
   type = list(string)
 }
