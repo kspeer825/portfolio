@@ -21,6 +21,14 @@ variable "aws_default_sg" {
   type = string
 }
 
+variable "aws_r53_record_name" {
+  type = string
+}
+
+variable "aws_r53_zone_id" {
+  type = string
+}
+
 variable "aws_region" {
   type = string
 }
@@ -67,10 +75,6 @@ variable "aws_subnet4_id" {
 }
 
 variable "aws_subnet4_cidr" {
-  type = string
-}
-
-variable "aws_subnet5_id" {
   type = string
 }
 

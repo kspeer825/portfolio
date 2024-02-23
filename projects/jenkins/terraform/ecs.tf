@@ -83,15 +83,11 @@ resource "aws_ecs_service" "jenkins-service" {
 
   network_configuration {
     subnets = [
-      aws_subnet.uno.id,
-      aws_subnet.dos.id,
-      aws_subnet.tres.id,
-      aws_subnet.quatro.id,
-      aws_subnet.cinco.id,
-      aws_subnet.seis.id,
+      aws_subnet.private1.id,
+      aws_subnet.private2.id,
     ]
     security_groups  = [aws_security_group.jenkins-sg.id]
-    assign_public_ip = true
+    assign_public_ip = false
   }
 
   load_balancer {

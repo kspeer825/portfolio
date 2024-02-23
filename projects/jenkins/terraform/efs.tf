@@ -42,38 +42,14 @@ resource "aws_efs_access_point" "jenkins-access-point" {
 
 }
 
-resource "aws_efs_mount_target" "uno" {
+resource "aws_efs_mount_target" "mount1" {
   file_system_id  = aws_efs_file_system.jenkins-efs.id
-  subnet_id       = aws_subnet.uno.id
+  subnet_id       = aws_subnet.private1.id
   security_groups = [aws_security_group.jenkins-efs.id]
 }
 
-resource "aws_efs_mount_target" "dos" {
+resource "aws_efs_mount_target" "mount2" {
   file_system_id  = aws_efs_file_system.jenkins-efs.id
-  subnet_id       = aws_subnet.dos.id
-  security_groups = [aws_security_group.jenkins-efs.id]
-}
-
-resource "aws_efs_mount_target" "tres" {
-  file_system_id  = aws_efs_file_system.jenkins-efs.id
-  subnet_id       = aws_subnet.tres.id
-  security_groups = [aws_security_group.jenkins-efs.id]
-}
-
-resource "aws_efs_mount_target" "quatro" {
-  file_system_id  = aws_efs_file_system.jenkins-efs.id
-  subnet_id       = aws_subnet.quatro.id
-  security_groups = [aws_security_group.jenkins-efs.id]
-}
-
-resource "aws_efs_mount_target" "cinco" {
-  file_system_id  = aws_efs_file_system.jenkins-efs.id
-  subnet_id       = aws_subnet.cinco.id
-  security_groups = [aws_security_group.jenkins-efs.id]
-}
-
-resource "aws_efs_mount_target" "seis" {
-  file_system_id  = aws_efs_file_system.jenkins-efs.id
-  subnet_id       = aws_subnet.seis.id
+  subnet_id       = aws_subnet.private2.id
   security_groups = [aws_security_group.jenkins-efs.id]
 }

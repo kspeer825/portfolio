@@ -4,12 +4,8 @@ resource "aws_lb" "jenkins-lb" {
   load_balancer_type = "application"
   security_groups    = [aws_security_group.alb-sg.id]
   subnets = [
-    aws_subnet.uno.id,
-    aws_subnet.dos.id,
-    aws_subnet.tres.id,
-    aws_subnet.quatro.id,
-    aws_subnet.cinco.id,
-    aws_subnet.seis.id,
+    aws_subnet.public1.id,
+    aws_subnet.public2.id,
   ]
 
   enable_deletion_protection = false
@@ -28,7 +24,7 @@ resource "aws_lb_target_group" "jenkins-target" {
   name        = "jenkins-target-group"
   port        = "8080"
   protocol    = "HTTP"
-  vpc_id      = aws_vpc.primary.id
+  vpc_id      = aws_vpc.jenkins-vpc.id
   target_type = "ip"
 
   health_check {

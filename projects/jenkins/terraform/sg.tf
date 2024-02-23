@@ -1,10 +1,10 @@
 resource "aws_security_group" "jenkins-sg" {
   name        = "jenkins"
   description = "Jenkins nodes"
-  vpc_id      = aws_vpc.primary.id
+  vpc_id      = aws_vpc.jenkins-vpc.id
 
   tags = {
-    Name = "jenkins"
+    Name = "jenkins-nodes"
   }
 
   ingress {
@@ -26,7 +26,7 @@ resource "aws_security_group" "jenkins-sg" {
 resource "aws_security_group" "alb-sg" {
   name        = "jenkins-alb"
   description = "Jenkins ALB security group"
-  vpc_id      = aws_vpc.primary.id
+  vpc_id      = aws_vpc.jenkins-vpc.id
 
   ingress {
     protocol    = "tcp"
@@ -50,14 +50,46 @@ resource "aws_security_group" "alb-sg" {
   }
 
   tags = {
-    Name = "jenkins"
+    Name = "jenkins-alb"
+  }
+}
+
+resource "aws_security_group" "jenkins-vpc-endpoint" {
+  name        = "jenkins-endpoint"
+  description = "Jenkins VPC interface endpoint security group"
+  vpc_id      = aws_vpc.jenkins-vpc.id
+
+  ingress {
+    protocol  = "tcp"
+    from_port = 80
+    to_port   = 80
+
+    cidr_blocks = [
+      aws_subnet.private1.cidr_block,
+      aws_subnet.private2.cidr_block,
+    ]
+  }
+
+  ingress {
+    protocol  = "tcp"
+    from_port = 443
+    to_port   = 443
+
+    cidr_blocks = [
+      aws_subnet.private1.cidr_block,
+      aws_subnet.private2.cidr_block,
+    ]
+  }
+
+  tags = {
+    Name = "jenkins-vpc-endpoint"
   }
 }
 
 resource "aws_security_group" "jenkins-efs" {
   name        = "jenkins-efs"
   description = "Jenkins EFS security group"
-  vpc_id      = aws_vpc.primary.id
+  vpc_id      = aws_vpc.jenkins-vpc.id
 
   ingress {
     protocol        = "tcp"
@@ -74,6 +106,6 @@ resource "aws_security_group" "jenkins-efs" {
   }
 
   tags = {
-    Name = "jenkins"
+    Name = "jenkins-efs"
   }
 }
