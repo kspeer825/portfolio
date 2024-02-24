@@ -25,7 +25,7 @@ function Projects() {
       <Grid container spacing="md">
         <Grid item cols={10}>
           <PersonalProjectBox
-            title="CI/CD"
+            title="Serverless CI/CD Platform"
             subtitle="Serverless Jenkins Cluster"
             tools=" Terraform, AWS (VPC, ALB, ECS, Cloudwatch, IAM, EFS), Jenkins"
             color="gray"

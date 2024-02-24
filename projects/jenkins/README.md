@@ -70,7 +70,7 @@ The Terraform module will take care of spinning up the ALB, ECS service and task
 
 NOTE: I am using VPC endpoints to enable connections from Fargate tasks in the private subnet to public endpoints in S3, ECR, and Cloudwatch. This is cheaper than running a NAT Gateway or assigning a public IP4 address to the control agent. But using AWS Privatelink will still incur costs (although much less) for the Interface endpoints. The main drawback with this approach is that each service requires it's own endpoint, and in some cases like ECR it requires multiple endpoints. With that said the cost savings more than justify it, you just need to keep in mind that any service that requires external traffic will need an endpoint.
 
-## ToDo's
+## To Do's
 This is a work in progress, the following are outstanding tasks:
   - [ ] Enable EFS backups
   - [ ] Instructions for enabling ECS Jenkins cloud (worker agents) from control node
