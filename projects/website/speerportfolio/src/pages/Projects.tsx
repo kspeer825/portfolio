@@ -101,17 +101,14 @@ function Projects() {
             title="Programming"
             subtitle="Advent of Code Solutions"
             tools="Go, Clojure, Python, Docker (the images mentioned above)"
-            context="Each year I try to complete the latest Advent of Code using a languge that is new to me, or that I want more practice in. I have organized my solutions from each year with a docker container and Makefile, so anyone can reproduce the output."
+            context="Each year I try to complete the latest Advent of Code using a language that is new to me, or that I want more practice in. I have organized my solutions from each year with a Docker container and Makefile, so anyone can reproduce the output."
             color="blue"
             children=<div>
               <h3> Details:</h3>
               <ul>
+                <li><a href="https://adventofcode.com/about">Advent of Code</a></li>
                 <li>2023 solutions | Go | <a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2023#advent-of-code-2023-solutions">Github</a></li>
-              </ul>
-              <ul>
                 <li>2022 solutions | Clojure | <a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2022#advent-of-code-2022-solutions">Github</a></li>
-              </ul>
-              <ul>
                 <li>2021 solutions | Python | <a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021#advent-of-code-2021-solutions">Github</a></li>
               </ul>
             </div>
