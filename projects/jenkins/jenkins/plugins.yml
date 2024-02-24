@@ -1,0 +1,895 @@
+plugins:
+  - artifactId: amazon-ecs
+    source:
+      version: 1.49
+  - artifactId: aws-java-sdk-ecs
+  - artifactId: aws-java-sdk-efs
+  - artifactId: aws-java-sdk-minimal
+  - artifactId: workflow-step-api
+  - artifactId: apache-httpcomponents-client-4-api
+  - artifactId: aws-credentials
+  - artifactId: credentials-binding
+  - artifactId: durable-task
+  - artifactId: structs
+  - artifactId: variant
+  - artifactId: aws-java-sdk-ec2
+    source:
+      version: 1.12.633-430.vf9a_e567a_244f
+  - artifactId: aws-credentials
+  - artifactId: aws-java-sdk-minimal
+  - artifactId: aws-java-sdk-ecs
+    source:
+      version: 1.12.633-430.vf9a_e567a_244f
+  - artifactId: amazon-ecs
+  - artifactId: aws-java-sdk-minimal
+  - artifactId: aws-java-sdk-efs
+    source:
+      version: 1.12.633-430.vf9a_e567a_244f
+  - artifactId: amazon-ecs
+  - artifactId: aws-java-sdk-minimal
+  - artifactId: aws-java-sdk-minimal
+    source:
+      version: 1.12.633-430.vf9a_e567a_244f
+  - artifactId: amazon-ecs
+  - artifactId: aws-java-sdk-ecs
+  - artifactId: aws-java-sdk-ec2
+  - artifactId: aws-java-sdk-efs
+  - artifactId: jaxb
+  - artifactId: joda-time-api
+  - artifactId: apache-httpcomponents-client-4-api
+  - artifactId: jackson2-api
+  - artifactId: ant
+    source:
+      version: 497.v94e7d9fffa_b_9
+  - artifactId: structs
+  - artifactId: apache-httpcomponents-client-4-api
+    source:
+      version: 4.5.14-208.v438351942757
+  - artifactId: amazon-ecs
+  - artifactId: git-client
+  - artifactId: aws-java-sdk-minimal
+  - artifactId: workflow-basic-steps
+  - artifactId: aws-credentials
+    source:
+      version: 218.v1b_e9466ec5da_
+  - artifactId: amazon-ecs
+  - artifactId: aws-java-sdk-ec2
+  - artifactId: credentials-binding
+  - artifactId: credentials
+  - artifactId: script-security
+  - artifactId: structs
+  - artifactId: variant
+  - artifactId: bootstrap5-api
+    source:
+      version: 5.3.2-3
+  - artifactId: junit
+  - artifactId: echarts-api
+  - artifactId: commons-lang3-api
+  - artifactId: commons-text-api
+  - artifactId: font-awesome-api
+  - artifactId: bouncycastle-api
+    source:
+      version: 2.30.1.77-225.v26ea_c9455fd9
+  - artifactId: instance-identity
+  - artifactId: branch-api
+    source:
+      version: 2.1148.vce12cfcdf090
+  - artifactId: workflow-multibranch
+  - artifactId: caffeine-api
+  - artifactId: ionicons-api
+  - artifactId: cloudbees-folder
+  - artifactId: scm-api
+  - artifactId: build-timeout
+    source:
+      version: 1.32
+  - artifactId: token-macro
+  - artifactId: caffeine-api
+    source:
+      version: 3.1.8-133.v17b_1ff2e0599
+  - artifactId: script-security
+  - artifactId: github-branch-source
+  - artifactId: branch-api
+  - artifactId: workflow-support
+  - artifactId: checks-api
+    source:
+      version: 2.0.2
+  - artifactId: junit
+  - artifactId: commons-lang3-api
+  - artifactId: commons-text-api
+  - artifactId: plugin-util-api
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: display-url-api
+  - artifactId: commons-lang3-api
+    source:
+      version: 3.13.0-62.v7d18e55f51e2
+  - artifactId: font-awesome-api
+  - artifactId: github-api
+  - artifactId: timestamper
+  - artifactId: github
+  - artifactId: bootstrap5-api
+  - artifactId: echarts-api
+  - artifactId: plugin-util-api
+  - artifactId: checks-api
+  - artifactId: jquery3-api
+  - artifactId: commons-text-api
+  - artifactId: commons-text-api
+    source:
+      version: 1.11.0-95.v22a_d30ee5d36
+  - artifactId: font-awesome-api
+  - artifactId: bootstrap5-api
+  - artifactId: echarts-api
+  - artifactId: plugin-util-api
+  - artifactId: checks-api
+  - artifactId: jquery3-api
+  - artifactId: commons-lang3-api
+  - artifactId: credentials-binding
+    source:
+      version: 657.v2b_19db_7d6e6d
+  - artifactId: pipeline-model-extensions
+  - artifactId: amazon-ecs
+  - artifactId: git
+  - artifactId: pipeline-model-definition
+  - artifactId: aws-credentials
+  - artifactId: workflow-step-api
+  - artifactId: credentials
+  - artifactId: plain-credentials
+  - artifactId: ssh-credentials
+  - artifactId: structs
+  - artifactId: credentials
+    source:
+      version: 1319.v7eb_51b_3a_c97b_
+  - artifactId: credentials-binding
+  - artifactId: email-ext
+  - artifactId: pipeline-model-extensions
+  - artifactId: github
+  - artifactId: pipeline-model-definition
+  - artifactId: aws-credentials
+  - artifactId: github-branch-source
+  - artifactId: ssh-slaves
+  - artifactId: plain-credentials
+  - artifactId: git
+  - artifactId: git-client
+  - artifactId: ssh-credentials
+  - artifactId: pipeline-input-step
+  - artifactId: structs
+  - artifactId: dark-theme
+    source:
+      version: 416.v535839b_c4e88
+  - artifactId: theme-manager
+  - artifactId: display-url-api
+    source:
+      version: 2.200.vb_9327d658781
+  - artifactId: github
+  - artifactId: junit
+  - artifactId: checks-api
+  - artifactId: mailer
+  - artifactId: durable-task
+    source:
+      version: 550.v0930093c4b_a_6
+  - artifactId: amazon-ecs
+  - artifactId: workflow-durable-task-step
+  - artifactId: echarts-api
+    source:
+      version: 5.4.3-2
+  - artifactId: junit
+  - artifactId: bootstrap5-api
+  - artifactId: commons-lang3-api
+  - artifactId: commons-text-api
+  - artifactId: font-awesome-api
+  - artifactId: jquery3-api
+  - artifactId: plugin-util-api
+  - artifactId: jackson2-api
+  - artifactId: email-ext
+    source:
+      version: 2.104
+  - artifactId: jakarta-mail-api
+  - artifactId: credentials
+  - artifactId: jackson2-api
+  - artifactId: junit
+  - artifactId: mailer
+  - artifactId: matrix-project
+  - artifactId: scm-api
+  - artifactId: script-security
+  - artifactId: structs
+  - artifactId: token-macro
+  - artifactId: cloudbees-folder
+    source:
+      version: 6.921.vfb_b_224371fb_4
+  - artifactId: pipeline-groovy-lib
+  - artifactId: branch-api
+  - artifactId: workflow-multibranch
+  - artifactId: ionicons-api
+  - artifactId: font-awesome-api
+    source:
+      version: 6.5.1-2
+  - artifactId: bootstrap5-api
+  - artifactId: echarts-api
+  - artifactId: commons-lang3-api
+  - artifactId: commons-text-api
+  - artifactId: plugin-util-api
+  - artifactId: git-client
+    source:
+      version: 4.6.0
+  - artifactId: git
+  - artifactId: pipeline-model-definition
+  - artifactId: mina-sshd-api-common
+  - artifactId: mina-sshd-api-core
+  - artifactId: apache-httpcomponents-client-4-api
+  - artifactId: credentials
+  - artifactId: script-security
+  - artifactId: ssh-credentials
+  - artifactId: structs
+  - artifactId: trilead-api
+  - artifactId: git
+    source:
+      version: 5.2.1
+  - artifactId: github
+  - artifactId: pipeline-github-lib
+  - artifactId: workflow-scm-step
+  - artifactId: workflow-step-api
+  - artifactId: credentials-binding
+  - artifactId: credentials
+  - artifactId: git-client
+  - artifactId: mailer
+  - artifactId: scm-api
+  - artifactId: script-security
+  - artifactId: ssh-credentials
+  - artifactId: structs
+  - artifactId: github-api
+    source:
+      version: 1.318-461.v7a_c09c9fa_d63
+  - artifactId: github
+  - artifactId: github-branch-source
+  - artifactId: commons-lang3-api
+  - artifactId: okhttp-api
+  - artifactId: jackson2-api
+  - artifactId: github-branch-source
+    source:
+      version: 1772.va_69eda_d018d4
+  - artifactId: github
+  - artifactId: caffeine-api
+  - artifactId: jjwt-api
+  - artifactId: okhttp-api
+  - artifactId: workflow-support
+  - artifactId: credentials
+  - artifactId: github-api
+  - artifactId: github
+    source:
+      version: 1.38.0
+  - artifactId: github-branch-source
+  - artifactId: commons-lang3-api
+  - artifactId: okhttp-api
+  - artifactId: instance-identity
+  - artifactId: credentials
+  - artifactId: display-url-api
+  - artifactId: git
+  - artifactId: github-api
+  - artifactId: plain-credentials
+  - artifactId: scm-api
+  - artifactId: token-macro
+  - artifactId: gradle
+    source:
+      version: 2.10
+  - artifactId: structs
+  - artifactId: workflow-api
+  - artifactId: workflow-cps
+  - artifactId: workflow-job
+  - artifactId: workflow-basic-steps
+  - artifactId: workflow-durable-task-step
+  - artifactId: workflow-step-api
+  - artifactId: gson-api
+    source:
+      version: 2.10.1-15.v0d99f670e0a_7
+  - artifactId: trilead-api
+  - artifactId: instance-identity
+    source:
+      version: 185.v303dc7c645f9
+  - artifactId: github
+  - artifactId: mailer
+  - artifactId: gradle
+  - artifactId: jjwt-api
+  - artifactId: pam-auth
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-milestone-step
+  - artifactId: workflow-aggregator
+  - artifactId: pipeline-stage-step
+  - artifactId: plain-credentials
+  - artifactId: bouncycastle-api
+  - artifactId: ionicons-api
+    source:
+      version: 56.v1b_1c8c49374e
+  - artifactId: junit
+  - artifactId: pipeline-model-definition
+  - artifactId: cloudbees-folder
+  - artifactId: workflow-cps
+  - artifactId: branch-api
+  - artifactId: matrix-auth
+  - artifactId: workflow-job
+  - artifactId: workflow-multibranch
+  - artifactId: jackson2-api
+    source:
+      version: 2.16.1-373.ve709c6871598
+  - artifactId: github-api
+  - artifactId: jjwt-api
+  - artifactId: email-ext
+  - artifactId: junit
+  - artifactId: pipeline-rest-api
+  - artifactId: echarts-api
+  - artifactId: pipeline-model-api
+  - artifactId: aws-java-sdk-minimal
+  - artifactId: theme-manager
+  - artifactId: javax-activation-api
+  - artifactId: jaxb
+  - artifactId: snakeyaml-api
+  - artifactId: jakarta-activation-api
+    source:
+      version: 2.0.1-3
+  - artifactId: jakarta-mail-api
+  - artifactId: jakarta-mail-api
+    source:
+      version: 2.0.1-3
+  - artifactId: email-ext
+  - artifactId: mailer
+  - artifactId: workflow-basic-steps
+  - artifactId: jakarta-activation-api
+  - artifactId: jjwt-api
+    source:
+      version: 0.11.5-77.v646c772fddb_0
+  - artifactId: github-branch-source
+  - artifactId: jackson2-api
+  - artifactId: javax-activation-api
+    source:
+      version: 1.2.0-6
+  - artifactId: jaxb
+  - artifactId: jackson2-api
+  - artifactId: javax-mail-api
+  - artifactId: gradle
+  - artifactId: jjwt-api
+  - artifactId: pam-auth
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-milestone-step
+  - artifactId: workflow-aggregator
+  - artifactId: plain-credentials
+  - artifactId: javax-mail-api
+    source:
+      version: 1.6.2-9
+  - artifactId: gradle
+  - artifactId: jjwt-api
+  - artifactId: pam-auth
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-milestone-step
+  - artifactId: workflow-aggregator
+  - artifactId: plain-credentials
+  - artifactId: javax-activation-api
+  - artifactId: jaxb
+    source:
+      version: 2.3.9-1
+  - artifactId: jackson2-api
+  - artifactId: aws-java-sdk-minimal
+  - artifactId: javax-activation-api
+  - artifactId: joda-time-api
+    source:
+      version: 2.12.7-29.v5a_b_e3a_82269a_
+  - artifactId: pipeline-model-api
+  - artifactId: aws-java-sdk-minimal
+  - artifactId: jquery3-api
+    source:
+      version: 3.7.1-1
+  - artifactId: echarts-api
+  - artifactId: commons-lang3-api
+  - artifactId: commons-text-api
+  - artifactId: json-path-api
+    source:
+      version: 2.9.0-33.v2527142f2e1d
+  - artifactId: token-macro
+  - artifactId: junit
+    source:
+      version: 1259.v65ffcef24a_88
+  - artifactId: email-ext
+  - artifactId: matrix-project
+  - artifactId: bootstrap5-api
+  - artifactId: checks-api
+  - artifactId: echarts-api
+  - artifactId: ionicons-api
+  - artifactId: plugin-util-api
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: display-url-api
+  - artifactId: jackson2-api
+  - artifactId: script-security
+  - artifactId: ldap
+    source:
+      version: 711.vb_d1a_491714dc
+  - artifactId: mailer
+  - artifactId: mailer
+    source:
+      version: 463.vedf8358e006b_
+  - artifactId: email-ext
+  - artifactId: git
+  - artifactId: ldap
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-basic-steps
+  - artifactId: jakarta-mail-api
+  - artifactId: instance-identity
+  - artifactId: display-url-api
+  - artifactId: matrix-auth
+    source:
+      version: 3.2.1
+  - artifactId: ionicons-api
+  - artifactId: matrix-project
+
+    source:
+      version: 822.824.v14451b_c0fd42
+
+  - artifactId: email-ext
+  - artifactId: ws-cleanup
+  - artifactId: junit
+  - artifactId: script-security
+  - artifactId: mina-sshd-api-common
+    source:
+      version: 2.12.0-90.v9f7fb_9fa_3d3b_
+  - artifactId: mina-sshd-api-core
+  - artifactId: git-client
+  - artifactId: mina-sshd-api-core
+    source:
+      version: 2.12.0-90.v9f7fb_9fa_3d3b_
+  - artifactId: git-client
+  - artifactId: mina-sshd-api-common
+  - artifactId: okhttp-api
+    source:
+      version: 4.11.0-172.vda_da_1feeb_c6e
+  - artifactId: github-api
+  - artifactId: github
+  - artifactId: github-branch-source
+  - artifactId: antisamy-markup-formatter
+    source:
+      version: 162.v0e6ec0fcfcf6
+  - artifactId: timestamper
+  - artifactId: pam-auth
+    source:
+      version: 1.10
+  - artifactId: workflow-aggregator
+    source:
+      version: 596.v8c21c963d92d
+  - artifactId: pipeline-groovy-lib
+  - artifactId: workflow-basic-steps
+  - artifactId: workflow-cps
+  - artifactId: workflow-durable-task-step
+  - artifactId: workflow-job
+  - artifactId: workflow-multibranch
+  - artifactId: pipeline-build-step
+  - artifactId: pipeline-input-step
+  - artifactId: pipeline-milestone-step
+  - artifactId: pipeline-stage-step
+  - artifactId: pipeline-model-definition
+  - artifactId: pipeline-graph-analysis
+    source:
+      version: 202.va_d268e64deb_3
+  - artifactId: pipeline-rest-api
+  - artifactId: workflow-api
+  - artifactId: workflow-cps
+  - artifactId: workflow-job
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: pipeline-input-step
+  - artifactId: pipeline-stage-step
+  - artifactId: workflow-api
+    source:
+      version: 1291.v51fd2a_625da_7
+  - artifactId: timestamper
+  - artifactId: junit
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-milestone-step
+  - artifactId: pipeline-build-step
+  - artifactId: pipeline-stage-view
+  - artifactId: pipeline-groovy-lib
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-cps
+  - artifactId: workflow-support
+  - artifactId: workflow-multibranch
+  - artifactId: gradle
+  - artifactId: pipeline-rest-api
+  - artifactId: workflow-durable-task-step
+  - artifactId: pipeline-stage-tags-metadata
+  - artifactId: plugin-util-api
+  - artifactId: pipeline-input-step
+  - artifactId: pipeline-stage-step
+  - artifactId: workflow-basic-steps
+  - artifactId: workflow-job
+  - artifactId: workflow-step-api
+  - artifactId: scm-api
+  - artifactId: workflow-basic-steps
+    source:
+      version: 1042.ve7b_140c4a_e0c
+  - artifactId: gradle
+  - artifactId: workflow-aggregator
+  - artifactId: pipeline-model-definition
+  - artifactId: jakarta-mail-api
+  - artifactId: workflow-api
+  - artifactId: workflow-durable-task-step
+  - artifactId: workflow-step-api
+  - artifactId: apache-httpcomponents-client-4-api
+  - artifactId: mailer
+  - artifactId: structs
+  - artifactId: pipeline-build-step
+    source:
+      version: 540.vb_e8849e1a_b_d8
+  - artifactId: workflow-aggregator
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: script-security
+  - artifactId: structs
+  - artifactId: pipeline-model-definition
+    source:
+      version: 2.2175.v76a_fff0a_2618
+  - artifactId: workflow-aggregator
+  - artifactId: ionicons-api
+  - artifactId: pipeline-groovy-lib
+  - artifactId: workflow-api
+  - artifactId: workflow-basic-steps
+  - artifactId: workflow-cps
+  - artifactId: workflow-durable-task-step
+  - artifactId: workflow-multibranch
+  - artifactId: workflow-scm-step
+  - artifactId: workflow-support
+  - artifactId: credentials-binding
+  - artifactId: credentials
+  - artifactId: git-client
+  - artifactId: mailer
+  - artifactId: pipeline-input-step
+  - artifactId: pipeline-stage-step
+  - artifactId: scm-api
+  - artifactId: structs
+  - artifactId: pipeline-model-api
+  - artifactId: pipeline-model-extensions
+  - artifactId: pipeline-stage-tags-metadata
+  - artifactId: pipeline-model-extensions
+    source:
+      version: 2.2175.v76a_fff0a_2618
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-cps
+  - artifactId: workflow-job
+  - artifactId: credentials-binding
+  - artifactId: credentials
+  - artifactId: pipeline-stage-step
+  - artifactId: pipeline-model-api
+  - artifactId: pipeline-github-lib
+    source:
+      version: 42.v0739460cda_c4
+  - artifactId: pipeline-groovy-lib
+  - artifactId: git
+  - artifactId: workflow-cps
+    source:
+      version: 3867.v535458ce43fd
+  - artifactId: gradle
+  - artifactId: pipeline-model-extensions
+  - artifactId: pipeline-graph-analysis
+  - artifactId: workflow-aggregator
+  - artifactId: pipeline-groovy-lib
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-multibranch
+  - artifactId: ionicons-api
+  - artifactId: workflow-api
+  - artifactId: workflow-scm-step
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: scm-api
+  - artifactId: script-security
+  - artifactId: structs
+  - artifactId: pipeline-groovy-lib
+    source:
+      version: 704.vc58b_8890a_384
+  - artifactId: workflow-aggregator
+  - artifactId: pipeline-model-definition
+  - artifactId: pipeline-github-lib
+  - artifactId: workflow-api
+  - artifactId: workflow-cps
+  - artifactId: workflow-scm-step
+  - artifactId: workflow-step-api
+  - artifactId: cloudbees-folder
+  - artifactId: scm-api
+  - artifactId: script-security
+  - artifactId: structs
+  - artifactId: variant
+  - artifactId: pipeline-input-step
+    source:
+      version: 491.vb_07d21da_1a_fb_
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-rest-api
+  - artifactId: workflow-aggregator
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: credentials
+  - artifactId: structs
+  - artifactId: workflow-job
+    source:
+      version: 1400.v7fd111b_ec82f
+  - artifactId: gradle
+  - artifactId: pipeline-model-extensions
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-rest-api
+  - artifactId: workflow-aggregator
+  - artifactId: pipeline-stage-view
+  - artifactId: workflow-multibranch
+  - artifactId: ionicons-api
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: pipeline-milestone-step
+    source:
+      version: 111.v449306f708b_7
+  - artifactId: workflow-aggregator
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: pipeline-model-api
+    source:
+      version: 2.2175.v76a_fff0a_2618
+  - artifactId: pipeline-model-extensions
+  - artifactId: pipeline-model-definition
+  - artifactId: joda-time-api
+  - artifactId: workflow-step-api
+  - artifactId: jackson2-api
+  - artifactId: structs
+  - artifactId: workflow-multibranch
+    source:
+      version: 783.va_6eb_ef636fb_d
+  - artifactId: workflow-aggregator
+  - artifactId: pipeline-model-definition
+  - artifactId: ionicons-api
+  - artifactId: workflow-api
+  - artifactId: workflow-cps
+  - artifactId: workflow-job
+  - artifactId: workflow-scm-step
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: branch-api
+  - artifactId: cloudbees-folder
+  - artifactId: scm-api
+  - artifactId: script-security
+  - artifactId: workflow-durable-task-step
+    source:
+      version: 1331.vc8c2fed35334
+  - artifactId: gradle
+  - artifactId: workflow-aggregator
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-basic-steps
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: durable-task
+  - artifactId: scm-api
+  - artifactId: script-security
+  - artifactId: structs
+  - artifactId: pipeline-rest-api
+    source:
+      version: 2.34
+  - artifactId: pipeline-stage-view
+  - artifactId: workflow-api
+  - artifactId: workflow-job
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: jackson2-api
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-input-step
+  - artifactId: pipeline-stage-step
+  - artifactId: workflow-scm-step
+    source:
+      version: 415.v434365564324
+  - artifactId: git
+  - artifactId: pipeline-groovy-lib
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-cps
+  - artifactId: workflow-multibranch
+  - artifactId: workflow-step-api
+  - artifactId: pipeline-stage-step
+    source:
+      version: 305.ve96d0205c1c6
+  - artifactId: pipeline-model-extensions
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-rest-api
+  - artifactId: workflow-aggregator
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: pipeline-stage-tags-metadata
+    source:
+      version: 2.2175.v76a_fff0a_2618
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-api
+  - artifactId: pipeline-stage-view
+    source:
+      version: 2.34
+  - artifactId: pipeline-rest-api
+  - artifactId: workflow-api
+  - artifactId: workflow-job
+  - artifactId: workflow-step-api
+    source:
+      version: 657.v03b_e8115821b_
+  - artifactId: credentials-binding
+  - artifactId: pipeline-milestone-step
+  - artifactId: amazon-ecs
+  - artifactId: pipeline-build-step
+  - artifactId: workflow-multibranch
+  - artifactId: git
+  - artifactId: workflow-durable-task-step
+  - artifactId: plugin-util-api
+  - artifactId: pipeline-stage-step
+  - artifactId: workflow-basic-steps
+  - artifactId: workflow-job
+  - artifactId: timestamper
+  - artifactId: junit
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-groovy-lib
+  - artifactId: workflow-cps
+  - artifactId: workflow-support
+  - artifactId: checks-api
+  - artifactId: gradle
+  - artifactId: pipeline-rest-api
+  - artifactId: workflow-scm-step
+  - artifactId: pipeline-model-api
+  - artifactId: token-macro
+  - artifactId: pipeline-input-step
+  - artifactId: workflow-api
+  - artifactId: structs
+  - artifactId: workflow-support
+    source:
+      version: 865.v43e78cc44e0d
+  - artifactId: pipeline-graph-analysis
+  - artifactId: pipeline-build-step
+  - artifactId: pipeline-model-definition
+  - artifactId: github-branch-source
+  - artifactId: workflow-cps
+  - artifactId: checks-api
+  - artifactId: workflow-multibranch
+  - artifactId: pipeline-rest-api
+  - artifactId: workflow-durable-task-step
+  - artifactId: plugin-util-api
+  - artifactId: pipeline-input-step
+  - artifactId: workflow-job
+  - artifactId: caffeine-api
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: scm-api
+  - artifactId: script-security
+  - artifactId: plain-credentials
+    source:
+      version: 143.v1b_df8b_d3b_e48
+  - artifactId: credentials-binding
+  - artifactId: github
+  - artifactId: credentials
+  - artifactId: plugin-util-api
+    source:
+      version: 3.8.0
+  - artifactId: font-awesome-api
+  - artifactId: junit
+  - artifactId: echarts-api
+  - artifactId: checks-api
+  - artifactId: commons-lang3-api
+  - artifactId: commons-text-api
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: workflow-support
+  - artifactId: resource-disposer
+    source:
+      version: 0.23
+  - artifactId: ws-cleanup
+  - artifactId: scm-api
+    source:
+      version: 683.vb_16722fb_b_80b_
+  - artifactId: email-ext
+  - artifactId: github
+  - artifactId: git
+  - artifactId: workflow-durable-task-step
+  - artifactId: pipeline-groovy-lib
+  - artifactId: pipeline-model-definition
+  - artifactId: workflow-cps
+  - artifactId: branch-api
+  - artifactId: workflow-support
+  - artifactId: workflow-api
+  - artifactId: workflow-multibranch
+  - artifactId: structs
+  - artifactId: script-security
+
+    source:
+      version: 1326.vdb_c154de8669
+  - artifactId: email-ext
+  - artifactId: junit
+  - artifactId: pipeline-build-step
+  - artifactId: pipeline-groovy-lib
+  - artifactId: aws-credentials
+  - artifactId: workflow-cps
+  - artifactId: workflow-support
+  - artifactId: matrix-project
+  - artifactId: workflow-multibranch
+  - artifactId: git
+  - artifactId: workflow-durable-task-step
+  - artifactId: git-client
+  - artifactId: caffeine-api
+  - artifactId: snakeyaml-api
+    source:
+      version: 2.2-111.vc6598e30cc65
+  - artifactId: jackson2-api
+  - artifactId: ssh-slaves
+
+    source:
+      version: 2.948.vb_8050d697fec
+  - artifactId: credentials
+  - artifactId: ssh-credentials
+  - artifactId: trilead-api
+  - artifactId: ssh-credentials
+    source:
+      version: 308.ve4497b_ccd8f4
+  - artifactId: credentials-binding
+  - artifactId: git
+  - artifactId: git-client
+  - artifactId: ssh-slaves
+  - artifactId: credentials
+  - artifactId: trilead-api
+  - artifactId: structs
+    source:
+      version: 337.v1b_04ea_4df7c8
+  - artifactId: credentials-binding
+  - artifactId: email-ext
+  - artifactId: amazon-ecs
+  - artifactId: pipeline-build-step
+  - artifactId: credentials
+  - artifactId: pipeline-groovy-lib
+  - artifactId: ant
+  - artifactId: pipeline-model-definition
+  - artifactId: aws-credentials
+  - artifactId: workflow-cps
+  - artifactId: workflow-step-api
+  - artifactId: gradle
+  - artifactId: git
+  - artifactId: workflow-durable-task-step
+  - artifactId: ws-cleanup
+  - artifactId: pipeline-model-api
+  - artifactId: git-client
+  - artifactId: token-macro
+  - artifactId: scm-api
+  - artifactId: pipeline-input-step
+  - artifactId: workflow-basic-steps
+  - artifactId: theme-manager
+    source:
+      version: 215.vc1ff18d67920
+  - artifactId: dark-theme
+  - artifactId: jackson2-api
+  - artifactId: timestamper
+    source:
+      version: 1.26
+  - artifactId: commons-lang3-api
+  - artifactId: workflow-api
+  - artifactId: workflow-step-api
+  - artifactId: antisamy-markup-formatter
+  - artifactId: token-macro
+    source:
+      version: 400.v35420b_922dcb_
+  - artifactId: email-ext
+  - artifactId: github
+  - artifactId: build-timeout
+  - artifactId: json-path-api
+  - artifactId: workflow-step-api
+  - artifactId: structs
+  - artifactId: trilead-api
+    source:
+      version: 2.133.vfb_8a_7b_9c5dd1
+  - artifactId: git-client
+  - artifactId: ssh-credentials
+  - artifactId: ssh-slaves
+  - artifactId: gson-api
+  - artifactId: variant
+    source:
+      version: 60.v7290fc0eb_b_cd
+  - artifactId: amazon-ecs
+  - artifactId: pipeline-groovy-lib
+  - artifactId: aws-credentials
+  - artifactId: ws-cleanup
+    source:
+      version: 0.45
+  - artifactId: matrix-project
+  - artifactId: resource-disposer
+  - artifactId: structs

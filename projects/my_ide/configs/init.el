@@ -23,6 +23,7 @@
 			  (web-mode . "melpa-stable")
 			  (go-mode . "melpa-stable")
 			  (pandoc-mode . "melpa-stable")
+			  (terraform-mode . "melpa-stable")
 			  ;;(markdown-mode . "melpa-stable")
 			  ;; (typescript-mode . "melpa-stable") ;; installs broken
 			  ))
@@ -88,47 +89,65 @@
 
 ;; ====================== Configuring Major Modes ======================
 
-;; ;; _Typescript_
-;; ;; followed https://willschenk.com/articles/2021/setting_up_emacs_for_typescript_development/
+;; _Typescript_
+;; followed https://willschenk.com/articles/2021/setting_up_emacs_for_typescript_development/
 
-;; ;; ts configuration leverages tide, company, and flycheck
-;; (defun setup-tide-mode ()
-;;   (interactive)
-;;   (tide-setup)
-;;   (flycheck-mode +1)
-;;   (setq flycheck-check-syntax-automatically '(save mode-enabled))
-;;   (eldoc-mode +1)
-;;   (tide-hl-identifier-mode +1)
-;;   (setq web-mode-markup-indent-offset 2)
-;;   (setq web-mode-code-indent-offset 2)
-;;   (setq web-mode-attr-indent-offset 2)
-;;   (setq web-mode-attr-value-indent-offset 2)
-;;   ;; company is an optional dependency. You have to
-;;   ;; install it separately via package-install
-;;   ;; `M-x package-install [ret] company`
-;;   (company-mode +1))
+;; ts configuration leverages tide, company, and flycheck
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-attr-indent-offset 2)
+  (setq web-mode-attr-value-indent-offset 2)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1))
 
-;; ;; aligns annotation to the right hand side
-;; (setq company-tooltip-align-annotations t)
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
 
-;; ;; TODO spacing, etc. needs to be configured to match prettier first
-;; ;; formats the buffer before saving
-;; (add-hook 'before-save-hook 'tide-format-before-save)
+;; TODO spacing, etc. needs to be configured to match prettier first
+;; formats the buffer before saving
+(add-hook 'before-save-hook 'tide-format-before-save)
 
-;; ;; start the tide server whenever opening a ts file (whenever executing ts major mode)
-;; (add-hook 'typescript-mode-hook #'setup-tide-mode)
+;; start the tide server whenever opening a ts file (whenever executing ts major mode)
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
 
-;; ;; identify ts and tsx files via web-mode
-;; (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
-;; (add-to-list 'auto-mode-alist '("\\.ts\\'" . web-mode))
-;; (add-hook 'web-mode-hook
-;; 	  (lambda ()
-;; 	    (when (string-match "ts" (file-name-extension buffer-file-name))
-;; 	      (setup-tide-mode))))
+;; identify ts and tsx files via web-mode
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . web-mode))
+(add-hook 'web-mode-hook
+	  (lambda ()
+	    (when (string-match "ts" (file-name-extension buffer-file-name))
+	      (setup-tide-mode))))
 
-;; _Terraform_
 (custom-set-variables
- '(terraform-indent-level 2))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(global-hl-line-mode t)
+ '(global-whitespace-mode t)
+ '(inhibit-startup-screen t)
+ '(js-indent-level 2)
+ '(org-todo-keywords
+   '((sequence "TODO" "IN_PROGRESS" "CONTINUED" "|" "DONE" "MEETING")))
+ '(package-selected-packages
+   '(terraform-mode hcl-mode terraform-doc web-mode flycheck company tide markdown-mode tramp banner-comment projectile fireplace orgit dockerfile-mode cider clojure-mode org yaml-mode smex makdown-mode magit fixme-mode ag))
+ '(search-default-mode 'char-fold-to-regexp)
+ '(sentence-end-double-space nil)
+ '(sh-basic-offset 2)
+ '(terraform-indent-level 2)
+ '(terraform-format-on-save t)
+ '(whitespace-style
+   '(face trailing newline empty space-after-tab space-before-tab))
+ '(winner-mode t))
 
 ;; _GO_
 (setenv "GOPATH" "/usr/local/go/bin")
@@ -143,25 +162,7 @@
 
 ;; =============================== Custom ==============================
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(global-hl-line-mode t)
- '(global-whitespace-mode t)
- '(inhibit-startup-screen t)
- '(js-indent-level 2)
- '(org-todo-keywords
-   '((sequence "TODO" "IN_PROGRESS" "CONTINUED" "|" "DONE" "MEETING")))
- '(package-selected-packages
-   '(web-mode flycheck company tide markdown-mode tramp banner-comment projectile fireplace orgit dockerfile-mode cider clojure-mode org yaml-mode smex makdown-mode magit fixme-mode ag terraform-mode))
- '(search-default-mode 'char-fold-to-regexp)
- '(sentence-end-double-space nil)
- '(sh-basic-offset 2)
- '(whitespace-style
-   '(face trailing newline empty space-after-tab space-before-tab))
- '(winner-mode t))
+
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
