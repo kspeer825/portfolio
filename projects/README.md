@@ -1,5 +1,15 @@
 # Projects
 
+## Jenkins Cluster
+[Jenkins](https://www.jenkins.io/doc/) is an open source orchestration tool for automation pipelines. It is traditionally run on servers with static IPs, however it can be run in a serverless environment. This implementation leverages ECS Fargate tasks and VPC endpoints making it a cost-effective, scalable, and secure."
+
+Component Details:
+ - [Overview](https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/)
+ - [Application Load Balancer](https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/terraform/alb.tf) accesible via white-listed IPs
+ - [ECS Cluster](https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/terraform/ecs.tf) running Fargate tasks in a private subnet
+ - [VPC](https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/terraform/vpc.tf) using AWS PrivateLink for service-to-service communication
+ - [ECR](https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/terraform/ecr.tf) private repo for storing the [Jenkins Docker image](https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/jenkins/)
+
 ## Personal Website
 My personal website, currently available at [speerportfolio.com](https://speerportfolio.com/), is meant to be an extension of my resume with details of personal projects and professionl experiences.
 

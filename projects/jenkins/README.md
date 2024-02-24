@@ -1,5 +1,5 @@
 # A Jenkins cluster in ECS
-[Jenkins](https://www.jenkins.io/doc/) is an open source orchestration tool for automation pipelines. It is traditionally run on servers with static IPs, however it can be run in a serverless environment leveraging ECS Fargate tasks. This implementation is meant for my own edification and not meant as a public module - although it is set up to run like one.
+[Jenkins](https://www.jenkins.io/doc/) is an open source orchestration tool for automation pipelines. It is traditionally run on servers with static IPs, however it can be run in a serverless environment such as ECS Fargate. This implementation is meant for my own edification and not meant as a public module - although it is set up to run like one.
 
 The cluster runs in private subnets sitting behind an ALB which is publicly accessible only to white-listed IPs. The control node serves up the Jenkins UI and uses [amazon-ecs-fargate](https://github.com/jenkinsci/amazon-ecs-plugin) to dispatch builds to worker agents.
 
@@ -68,7 +68,7 @@ The Terraform module will take care of spinning up the ALB, ECS service and task
 	# Deploy the stack
 	make tf-plan tf-apply
 
-NOTE: I am using VPC endpoints to enable connections from Fargate tasks in the private subnet to public endpoints in S3, ECR, and Cloudwatch. This is cheaper than running a NAT Gateway or assigning a public IP4 address assigned to the control agent. But using AWS Privatelink will still incur costs (although much less) for the Interface endpoints. The main drawback with this approach is that each service requires it's own endpoint, and in some cases like ECR it requires multiple endpoints. With that said the cost savings more than justify it, you just need to keep in mind that any service that requires external traffic will need an endpoint.
+NOTE: I am using VPC endpoints to enable connections from Fargate tasks in the private subnet to public endpoints in S3, ECR, and Cloudwatch. This is cheaper than running a NAT Gateway or assigning a public IP4 address to the control agent. But using AWS Privatelink will still incur costs (although much less) for the Interface endpoints. The main drawback with this approach is that each service requires it's own endpoint, and in some cases like ECR it requires multiple endpoints. With that said the cost savings more than justify it, you just need to keep in mind that any service that requires external traffic will need an endpoint.
 
 ## ToDo's
 This is a work in progress, the following are outstanding tasks:
