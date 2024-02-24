@@ -4,7 +4,9 @@ import NavBar from '../Nav';
 import Box from '../components/Box'
 import Grid from '../components/Grid'
 import Header from '../components/Header';
+
 import AboutContent from '../content/about';
+import ContactContent from '../content/contact';
 
 import '../App.css';
 
@@ -82,15 +84,27 @@ function HomePage() {
       </Grid>
 
       <Grid container spacing="md">
-        <Grid item cols={1} />
-        <Grid item cols={10}>
-          <Box color='gray' corners='rounder'>
-            <AboutContent />
+        <Grid item cols={11}>
+          <Box color="dark_gray" corners="rounder">
+            <Grid container_gray spacing="md" >
+              <Grid item cols={12}>
+                <Box color="blue" corners="rounder">
+                  <AboutContent />
+                  <br />
+                  <ContactContent />
+                </Box>
+              </Grid>
+            </Grid>
           </Box>
         </Grid>
-        <Grid item cols={1} />
-      </Grid>
+      </Grid >
 
+
+      <Grid container spacing="lg">
+        <Grid item cols={12}>
+          <br /><br /><br />
+        </Grid>
+      </Grid>
     </div >
   );
 }

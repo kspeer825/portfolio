@@ -6,9 +6,11 @@ function AboutContent() {
     <>
       <p>
         I am a software engineer living in Marlton, NJ.
-        I graduated from the University of Pittsburgh in 2019 with a B.S. in Physics and a minor
-        in Computer Science. I have worked as a QA Engineer and a DevOps Engineer and have experience
-        helping build cloud-native web apps in both the data and telehealth domains.
+        I have worked as a DevOps Engineer and as a QA Engineer in the cable, data, and
+        telehealth domains. I have experience building API middleware services, and
+        cloud-native web apps.
+        I graduated from the University of Pittsburgh with a B.S. in Physics and a minor
+        in Computer Science.
       </p>
       <p>
         Outside of work I enjoy woodworking, hiking, and skiing.
