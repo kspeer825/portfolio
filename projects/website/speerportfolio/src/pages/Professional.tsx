@@ -3,6 +3,7 @@ import Box from '../components/Box'
 import Grid from '../components/Grid'
 import Header from '../components/Header';
 import ProjectBox from '../components/ProjectBox';
+import TableOfContents from '../components/TableOfContents';
 import NavBar from '../Nav';
 import '../App.css';
 
@@ -17,6 +18,7 @@ function Professional() {
         <Grid item cols={12}>
           <Box color='dark_gray' corners='rounder'>
             <h2> My professional experience... </h2>
+	    <TableOfContents />
           </Box>
         </Grid>
       </Grid>
@@ -24,7 +26,7 @@ function Professional() {
       <Grid container spacing="md">
         <Grid item cols={11}>
           <Box color='blue' corners='roundest'>
-            <h2> DevOps Engineer III at Comcast (contractor) </h2>
+            <h1 id="teksystems"> DevOps Engineer III at Comcast (contractor) </h1>
             <p> Feb 2023 - Present </p>
           </Box>
         </Grid>
@@ -73,7 +75,7 @@ function Professional() {
       <Grid container spacing="md">
         <Grid item cols={11}>
           <Box color='blue' corners='roundest'>
-            <h2> DevOps Engineer II at Ophelia Health </h2>
+            <h1 id="ophelia"> DevOps Engineer II at Ophelia Health </h1>
             <p> Oct 2022 - Jan 2023 </p>
           </Box>
         </Grid>
@@ -130,7 +132,7 @@ function Professional() {
       <Grid container spacing="md">
         <Grid item cols={11}>
           <Box color='blue' corners='roundest'>
-            <h2> Senior QA Engineer at Stitch </h2>
+            <h1 id="stitch1"> Senior QA Engineer at Stitch </h1>
             <p> Apr 2022 - Sep 2022 </p>
           </Box>
         </Grid>
@@ -199,7 +201,7 @@ function Professional() {
       <Grid container spacing="md">
         <Grid item cols={11}>
           <Box color='blue' corners='roundest'>
-            <h2> QA Engineer at Stitch </h2>
+            <h1 id="stitch2"> QA Engineer at Stitch </h1>
             <p> Apr 2021 - Apr 2022 </p>
           </Box>
         </Grid>
@@ -255,7 +257,7 @@ function Professional() {
       <Grid container spacing="md">
         <Grid item cols={11}>
           <Box color='blue' corners='roundest'>
-            <h2> Junior QA Engineer at Stitch </h2>
+            <h1 id="stitch3"> Junior QA Engineer at Stitch </h1>
             <p> Aug 2019 - Apr 2021 </p>
           </Box>
         </Grid>
