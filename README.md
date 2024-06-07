@@ -1,21 +1,18 @@
 # My Portfolio
-A portfolio of personal projects.
 
 # Projects
-Detailed overviews for each project are available [here](https://github.com/kspeer825/portfolio/tree/main/projects/#projects).
- - Serverless CI/CD
- - Single purpose Docker images
- - S3 static website [speerportfolio.com](https://speerportfolio.com/)
- - Advent of Code
- - My IDE
+ - [Serverless CI/CD](https://github.com/kspeer825/portfolio/tree/main/projects/#jenkins-cluster)
+ - [S3 static website](https://github.com/kspeer825/portfolio/tree/main/projects/#personal-website) (visit [here](https://speerportfolio.com/))
+ - [CLI Tooling](https://github.com/kspeer825/portfolio/tree/main/projects/#cli-tooling)
+ - [Single purpose Docker images](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
+
 
 # Patterns & Tooling
-A collection of practices and tooling for building software that I think are useful, effective, or just cool.
 
 ## Patterns & Practices
  - [Pair Programming](https://github.com/kspeer825/portfolio/tree/main/practices/#pair-programming)
  - [Test Driven Development](https://github.com/kspeer825/portfolio/tree/main/practices/#test-driven-development)
- - [Using a Makefile](https://github.com/kspeer825/portfolio/tree/main/practices/#using-a-makefile)
+ - [Makefiles](https://github.com/kspeer825/portfolio/tree/main/practices/#using-a-makefile)
 
 ## Tools
  - [Terraform](https://developer.hashicorp.com/terraform/intro) for Infrastructure as Code
