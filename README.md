@@ -1,8 +1,9 @@
-<h1 align="center">
-  [<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn" />](https://speerportfolio.com)
-    Speer Portfolio  
-  [<img width="50" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://www.linkedin.com/in/kyle-d-speer)
-</h1>
+<h1 align="center">Speer Portfolio</h1>
+
+[<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn" />](https://speerportfolio.com)
+[<img width="50" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://www.linkedin.com/in/kyle-d-speer)
+
+# Speer Portfolio [<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn" />](https://speerportfolio.com) [<img width="50" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://www.linkedin.com/in/kyle-d-speer)
 
 
 
