@@ -1,5 +1,6 @@
+<h1 align="center">Speer Portfolio</h1>
 <p align="center">
-# Speer Portfolio
+    <img src="./projects/website/speerportfolio/public/spear_logo512.png" alt="speer logo">
 </p>
 
 # Projects
