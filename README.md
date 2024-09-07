@@ -1,13 +1,10 @@
 <h1 align="center">Speer Portfolio</h1>
-<div allign="center">
-  <a align="left" href="https://speerportfolio.com">
-	<img width="50" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">
-  </a>
-  <p/>
-  <a align="right" href="https://www.linkedin.com/in/kyle-d-speer">
-	<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn Logo" />
-  </a>
-</div>
+<a href="https://speerportfolio.com">
+  <img width="50" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">
+</a>
+<a href="https://www.linkedin.com/in/kyle-d-speer">
+ <img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn Logo" />
+</a>
 
 # Projects
  - [Serverless CI/CD](https://github.com/kspeer825/portfolio/tree/main/projects/#jenkins-cluster)
