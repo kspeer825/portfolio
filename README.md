@@ -3,7 +3,7 @@
 ***
 <h1 align="center">Projects</h1>
 
-<h2 align="center">more details availabe at [./projects](projects/README.md#projects)</h1>
+<p align="center">more details availabe at [./projects](./projects/README.md#projects)</p>
 
 #  [<img width="25" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://speerportfolio.com) Personal Webiste
 A static website hosted in AWS using S3 and Cloudfront. It is written in Typescript using React and is deployed using Terraform via Github Actions.
