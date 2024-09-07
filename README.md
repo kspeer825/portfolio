@@ -1,5 +1,6 @@
 [<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn"/>]("https://www.linkedin.com/in/kyle-d-speer")
 
+***
 <h1 align="center" style="font-size: 100px" >Projects</h1>
 
 #  [<img width="25" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://speerportfolio.com) Personal Webiste
@@ -22,6 +23,7 @@ A secure containerized [Jenkins](https://www.jenkins.io/) cluster deployed via T
 
 ***
 <h1 align="center" style="font-size: 100px" >Patterns & Practices</h1>
+
 ***
 
  - [Pair Programming](https://github.com/kspeer825/portfolio/tree/main/practices/#pair-programming)
