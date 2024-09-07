@@ -6,9 +6,11 @@
  <img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn Logo" />
 </a>
 
+[![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kyle-d-speer)
+
 # Projects
  - [Serverless CI/CD](https://github.com/kspeer825/portfolio/tree/main/projects/#jenkins-cluster)
- - [S3 static website](https://github.com/kspeer825/portfolio/tree/main/projects/#personal-website) (visit [<img width="50" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://speerportfolio.com/))
+ - [S3 static website](https://github.com/kspeer825/portfolio/tree/main/projects/#personal-website)
  - [CLI Tooling](https://github.com/kspeer825/portfolio/tree/main/projects/#cli-tooling)
  - [Single purpose Docker images](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
 
