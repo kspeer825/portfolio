@@ -24,7 +24,7 @@ A series of simple, single-purpose base images available on [Docker Hub](https:/
 [./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
 
 
-More detailed project overviews are available [here](https://github.com/kspeer825/portfolio/tree/main/projects/#projects).
+#### More detailed project overviews are available [here](https://github.com/kspeer825/portfolio/tree/main/projects/#projects)
 
 ***
 <h1 align="center">Patterns & Practices</h1>
