@@ -1,5 +1,4 @@
-[<img width="25" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://speerportfolio.com)
-[<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn"/>]("https://www.linkedin.com/in/kyle-d-speer")
+[<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn"/>]("https://www.linkedin.com/in/kyle-d-speer") Hello! I'm software engineer interested in DevOps, testing, and woodworking.
 
 <h1 align="center" style="font-size: 100px" >Projects</h1>
 
@@ -13,11 +12,11 @@ A secure containerized [Jenkins](https://www.jenkins.io/) cluster deployed via T
 
 [./projects/jenkins](https://github.com/kspeer825/portfolio/tree/main/projects/#jenkins-cluster)
 
-# CLI Tooling
+# <img width="25" src="./projects/cli-tools/cli_logo.jpg" alt="Terminal"> CLI Tooling
 
 [./projects/cli-tools](https://github.com/kspeer825/portfolio/tree/main/projects/#cli-tooling)
 
-# Single purpose Docker images
+# <img width="25" src="./projects/jenkins/jenkins_logo.png" alt="Jenkins logo"> Docker images
 
 [./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
 
