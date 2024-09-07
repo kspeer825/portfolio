@@ -5,11 +5,9 @@
 	<a href="https://speerportfolio.com">
 	  <img width="50" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">
 	</a>
-	<p/>
 	<a href="https://www.linkedin.com/in/kyle-d-speer">
 	  <img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn Logo" />
 	</a>
-	<p/>
 	<a href={`mailto:kyle.d.speer@gmail.com?subject=""&body=""`}>
 	  <img width="50" src="./projects/website/speerportfolio/src/content/gmail_logo.png" alt="GMail Logo" />
 	</a>
