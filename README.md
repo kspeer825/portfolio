@@ -1,8 +1,6 @@
-<div align="left">
-  <a href="https://www.linkedin.com/in/kyle-d-speer">
-    <img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn"/>
-  </a>
-</div>
+[<img width="25" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://speerportfolio.com)
+[<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn"/>]("https://www.linkedin.com/in/kyle-d-speer")
+
 <h1 align="center" style="font-size: 100px" >Projects</h1>
 
 #  [<img width="25" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://speerportfolio.com) Personal Webiste
@@ -23,6 +21,7 @@ A secure containerized [Jenkins](https://www.jenkins.io/) cluster deployed via T
 
 [./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
 
+***
 <h1 align="center" style="font-size: 100px" >Patterns & Practices</h1>
  - [Pair Programming](https://github.com/kspeer825/portfolio/tree/main/practices/#pair-programming)
  - [Test Driven Development](https://github.com/kspeer825/portfolio/tree/main/practices/#test-driven-development)
