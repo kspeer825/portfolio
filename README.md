@@ -3,10 +3,6 @@
 ***
 <h1 align="center">Projects</h1>
 
-<p align="center">more details availabe at [./projects](./projects/#projects)</p>
-
-<p align="center">more details availabe at [./projects](https://github.com/kspeer825/portfolio/tree/main/projects/#projects)</p>
-
 #  [<img width="25" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://speerportfolio.com) Personal Webiste
 A static website hosted in AWS using S3 and Cloudfront. It is written in Typescript using React and is deployed using Terraform via Github Actions.
 
@@ -26,6 +22,9 @@ CLI tooling for automating tedious tasks such as ssh config management.
 A series of simple, single-purpose base images available on [Docker Hub](https://hub.docker.com/u/kspeer825). Useful for Terraform deployments or develping in Clojure, Python, or Go.
 
 [./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
+
+
+More detailed project overviews are available [here](https://github.com/kspeer825/portfolio/tree/main/projects/#projects).
 
 ***
 <h1 align="center">Patterns & Practices</h1>
