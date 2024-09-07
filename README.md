@@ -1,5 +1,4 @@
-<h1 align="center">Speer Portfolio</h1>
-<div align="right">
+<div align="left">
   <a href="https://www.linkedin.com/in/kyle-d-speer">
     <img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn"/>
   </a>
@@ -25,8 +24,7 @@ A secure containerized [Jenkins](https://www.jenkins.io/) cluster deployed via T
 
 [./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
 
-
-# Patterns & Practices
+<h1 align="center">Patterns & Practices</h1>
  - [Pair Programming](https://github.com/kspeer825/portfolio/tree/main/practices/#pair-programming)
  - [Test Driven Development](https://github.com/kspeer825/portfolio/tree/main/practices/#test-driven-development)
  - [Makefiles](https://github.com/kspeer825/portfolio/tree/main/practices/#using-a-makefile)
