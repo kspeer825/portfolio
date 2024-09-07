@@ -142,7 +142,7 @@
  '(org-todo-keywords
    '((sequence "TODO" "IN_PROGRESS" "CONTINUED" "|" "DONE" "MEETING")))
  '(package-selected-packages
-   '(go-mode terraform-mode hcl-mode terraform-doc web-mode flycheck company tide markdown-mode tramp banner-comment projectile fireplace orgit dockerfile-mode cider clojure-mode org yaml-mode smex makdown-mode magit fixme-mode ag))
+   '(impatient-mode go-mode terraform-mode hcl-mode terraform-doc web-mode flycheck company tide markdown-mode tramp banner-comment projectile fireplace orgit dockerfile-mode cider clojure-mode org yaml-mode smex makdown-mode magit fixme-mode ag))
  '(search-default-mode 'char-fold-to-regexp)
  '(sentence-end-double-space nil)
  '(sh-basic-offset 2)
