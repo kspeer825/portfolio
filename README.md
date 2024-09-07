@@ -3,10 +3,11 @@
   <img width="50" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">
 </a>
 <a href="https://www.linkedin.com/in/kyle-d-speer">
- <img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn Logo" />
+ <img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="https://speerportfolio.com" />
 </a>
 
-[![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kyle-d-speer)
+[![text](./projects/website/speerportfolio/public/spear_logo512.png)](https://www.linkedin.com/in/kyle-d-speer)
+[![text](./projects/website/speerportfolio/src/content/linkedin_logo.svg)](https://www.linkedin.com/in/kyle-d-speer)
 
 # Projects
  - [Serverless CI/CD](https://github.com/kspeer825/portfolio/tree/main/projects/#jenkins-cluster)
