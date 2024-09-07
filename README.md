@@ -21,7 +21,7 @@ CLI tooling for automating tedious tasks such as ssh config management.
 # <img width="25" src="./projects/docker/docker_logo.png" alt="docker logo"> Docker images
 A series of simple, single-purpose base images available on [Docker Hub](https://hub.docker.com/u/kspeer825). Useful for Terraform deployments or develping in Clojure, Python, or Go.
 
-<p align="right">[./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)</p>
+[./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
 
 
 More detailed project overviews are available [here](https://github.com/kspeer825/portfolio/tree/main/projects/#projects).
