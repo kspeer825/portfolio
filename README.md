@@ -11,11 +11,18 @@ A static website hosted in AWS using S3 and Cloudfront. It is written in Typescr
 
 [./projects/website](https://github.com/kspeer825/portfolio/tree/main/projects/#personal-website)
 
-## [Serverless CI/CD](https://github.com/kspeer825/portfolio/tree/main/projects/#jenkins-cluster)
+## <img width="25" src="./projects/jenkins/jenkins_logo.webp" alt="Jenkins logo"> Serverless CI/CD
+A secure containerized Jenkins cluster deployed via Terraform. It runs in AWS using ECS allowing for quick scaling of worker nodes to handle CI/CD jobs. The worker nodes run in a private subnet while the control nodes host a secured publicly accesilbe UI for managing pipelies.
 
-## [CLI Tooling](https://github.com/kspeer825/portfolio/tree/main/projects/#cli-tooling)
+[./projects/jenkins](https://github.com/kspeer825/portfolio/tree/main/projects/#jenkins-cluster)
 
-## [Single purpose Docker images](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
+## CLI Tooling
+
+[./projects/cli-tools](https://github.com/kspeer825/portfolio/tree/main/projects/#cli-tooling)
+
+## Single purpose Docker images
+
+[./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
 
 # Patterns & Practices
  - [Pair Programming](https://github.com/kspeer825/portfolio/tree/main/practices/#pair-programming)
