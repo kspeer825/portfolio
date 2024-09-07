@@ -5,24 +5,26 @@
   </a>
 </div>
 
-# Projects
-##  [<img width="25" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://speerportfolio.com) Personal Webiste
+<h1 align="center">Projects</h1>
+
+#  [<img width="25" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">](https://speerportfolio.com) Personal Webiste
 A static website hosted in AWS using S3 and Cloudfront. It is written in Typescript using React and is deployed using Terraform via Github Actions.
 
 [./projects/website](https://github.com/kspeer825/portfolio/tree/main/projects/#personal-website)
 
-## <img width="30" src="./projects/jenkins/jenkins_logo.png" alt="Jenkins logo"> Serverless CI/CD
+# <img width="25" src="./projects/jenkins/jenkins_logo.png" alt="Jenkins logo"> Serverless CI/CD
 A secure containerized [Jenkins](https://www.jenkins.io/) cluster deployed via Terraform. It runs in AWS using ECS allowing for quick scaling of worker nodes to handle CI/CD jobs. The worker nodes run in a private subnet while the control nodes host a secured publicly accesilbe UI for managing pipelies.
 
 [./projects/jenkins](https://github.com/kspeer825/portfolio/tree/main/projects/#jenkins-cluster)
 
-## CLI Tooling
+# CLI Tooling
 
 [./projects/cli-tools](https://github.com/kspeer825/portfolio/tree/main/projects/#cli-tooling)
 
-## Single purpose Docker images
+# Single purpose Docker images
 
 [./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#docker-images)
+
 
 # Patterns & Practices
  - [Pair Programming](https://github.com/kspeer825/portfolio/tree/main/practices/#pair-programming)
