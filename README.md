@@ -11,7 +11,7 @@ A static website hosted in AWS using S3 and Cloudfront. It is written in Typescr
 
 [./projects/website](https://github.com/kspeer825/portfolio/tree/main/projects/#personal-website)
 
-## <img width="25" src="./projects/jenkins/jenkins_logo.png" alt="Jenkins logo"> Serverless CI/CD
+## <img width="30" src="./projects/jenkins/jenkins_logo.png" alt="Jenkins logo"> Serverless CI/CD
 A secure containerized [Jenkins](https://www.jenkins.io/) cluster deployed via Terraform. It runs in AWS using ECS allowing for quick scaling of worker nodes to handle CI/CD jobs. The worker nodes run in a private subnet while the control nodes host a secured publicly accesilbe UI for managing pipelies.
 
 [./projects/jenkins](https://github.com/kspeer825/portfolio/tree/main/projects/#jenkins-cluster)
