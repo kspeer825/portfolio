@@ -1,4 +1,4 @@
-[<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn"/>]("https://www.linkedin.com/in/kyle-d-speer")
+[<img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn"/>](https://www.linkedin.com/in/kyle-d-speer)
 
 ***
 <h1 align="center">Projects</h1>
@@ -21,7 +21,7 @@ CLI tooling for automating tedious tasks such as SSH config management.
 # [<img width="25" src="./projects/docker/docker_logo.png" alt="docker logo">](https://hub.docker.com/u/kspeer825) Docker Images
 A series of simple, single-purpose base images available on [Docker Hub](https://hub.docker.com/u/kspeer825). Useful for Terraform deployments or develping in Clojure, Python, or Go.
 
-[./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/#cli-tooling)
+[./projects/docker](https://github.com/kspeer825/portfolio/tree/main/projects/docker)
 
 
 #### Additional projects along with detailed overviews are available [here](https://github.com/kspeer825/portfolio/tree/main/projects/#projects).
