@@ -1,9 +1,9 @@
+<h1 align="center">Speer Portfolio</h1>
 <div align="center">
   <div>
 	<a href="https://speerportfolio.com">
 	  <img width="50" src="./projects/website/speerportfolio/public/spear_logo512.png" alt="Speer logo">
 	</a>
-	<h1 align="center">Speer Portfolio</h1>
 	<a href="https://www.linkedin.com/in/kyle-d-speer">
 	  <img width="50" src="./projects/website/speerportfolio/src/content/linkedin_logo.svg" alt="LinkedIn Logo" />
 	</a>
