@@ -9,3 +9,4 @@
  - [Python](https://www.python.org/about/gettingstarted/) and [pyenv](https://realpython.com/intro-to-pyenv/#why-use-pyenv) for general scripting
  - [Pytest](https://docs.pytest.org/en/8.0.x/#a-quick-example) can be used for everything from simple unit tests to complex end-to-end automation suites
  - [Singer Taps](https://github.com/singer-io/getting-started) for data extraction
+ - [Tmux](https://github.com/tmux/tmux/tree/master?tab=readme-ov-file#welcome-to-tmux)
