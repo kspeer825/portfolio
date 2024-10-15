@@ -26,7 +26,7 @@ function Professional() {
       <Grid container spacing="md">
         <Grid item cols={11}>
           <Box color='blue' corners='roundest'>
-            <h1 id="teksystems"> Software Engineer III at Comcast </h1>
+            <h1 id="comcast"> Software Engineer III at Comcast </h1>
             <p> Feb 2023 - Present </p>
           </Box>
         </Grid>

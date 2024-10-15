@@ -36,7 +36,7 @@ function Carvings() {
             <img src={arch}  className="App-photo" alt="arch" />
 	  </Box >
 	</Grid >
-        <Grid item cols={4}>
+        <Grid item cols={2}>
           <Box color='blue' corners='roundest'>
             <img src={ring1}  className="App-photo" alt="ring 1" />
 	  </Box >
