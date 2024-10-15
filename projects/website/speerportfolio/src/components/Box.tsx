@@ -5,7 +5,7 @@ import cn from 'classnames'
 const Box: FunctionComponent<{
   children: ReactNode;
   corners?: 'round' | 'rounder' | 'roundest';
-  color?: 'gray' | 'blue' | 'dark_gray' | 'light_gray' | 'transparent';
+  color?: 'gray' | 'blue' | 'dark_gray' | 'medium_gray' | 'light_gray' | 'transparent';
 }> = ({ children, corners, color }) => {
   const classNames = cn({
     [styles.Box_normal]: true,

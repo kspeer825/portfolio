@@ -10,7 +10,7 @@ function Header() {
     <div className="App">
       <header className="App-header">
         <h2> Kyle Speer </h2>
-        <p> Hi! I'm a software engineer with interests in DevOps, testing, and woodworking. </p>
+        <p> Building scalable reliable systems, and also some woodworking.</p>
         <div className="App-header-links">
           <a href={`mailto:kyle.d.speer@gmail.com?subject=""&body=""`}>
             <img src={gmail_logo} className="App-logo" alt="GMail Logo" />

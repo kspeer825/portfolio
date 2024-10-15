@@ -11,7 +11,7 @@ const ProjectBox: FunctionComponent<{
 }> = ({ title, tools, description, impact }) => {
   return (
     <>
-      <Box color='dark_gray' corners='roundest'>
+      <Box color='medium_gray' corners='roundest'>
         <h3>
           {title}
         </h3>

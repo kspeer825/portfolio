@@ -48,7 +48,7 @@ function Projects() {
         <Grid item cols={10}>
           <PersonalProjectBox
             title="Website"
-            subtitle="SPA Hosting via S3 and CloudFront"
+            subtitle="Static Website via S3 and CloudFront"
             tools="Terraform, Github Actions, AWS (S3, Cloudfront, Route53), Typescript, Yarn"
             context="My personal website started out as a take-home project for an interview, and I ended up keeping it around to use as an extension of my resume with details of personal projects and professionl experiences."
             color="blue"
@@ -95,42 +95,21 @@ function Projects() {
         </Grid>
       </Grid >
 
-      <Grid container spacing="md">
-        <Grid item cols={10}>
-          <PersonalProjectBox
-            title="Programming"
-            subtitle="Advent of Code Solutions"
-            tools="Go, Clojure, Python, Docker (the images mentioned above)"
-            context="Each year I try to complete the latest Advent of Code using a language that is new to me, or that I want more practice in. I have organized my solutions from each year with a Docker container and Makefile, so anyone can reproduce the output."
-            color="blue"
-            children=<div>
-              <h3> Details:</h3>
-              <ul>
-                <li><a href="https://adventofcode.com/about">Advent of Code</a></li>
-                <li>2023 solutions | Go | <a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2023#advent-of-code-2023-solutions">Github</a></li>
-                <li>2022 solutions | Clojure | <a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2022#advent-of-code-2022-solutions">Github</a></li>
-                <li>2021 solutions | Python | <a href="https://github.com/kspeer825/portfolio/tree/main/projects/advent-solutions/2021#advent-of-code-2021-solutions">Github</a></li>
-              </ul>
-            </div>
-          />
-        </Grid>
-      </Grid >
-
       <Grid container spacing="lg">
         <Grid item cols={12}>
-          <Box color='light_gray' corners='round'>
+          <Box color='dark_gray' corners='round'>
           </Box>
         </Grid>
       </Grid>
       <Grid container spacing="lg">
         <Grid item cols={12}>
-          <Box color='light_gray' corners='round'>
+          <Box color='dark_gray' corners='round'>
           </Box>
         </Grid>
       </Grid>
       <Grid container spacing="lg">
         <Grid item cols={12}>
-          <Box color='light_gray' corners='round'>
+          <Box color='dark_gray' corners='round'>
           </Box>
         </Grid>
       </Grid>
