@@ -20,7 +20,7 @@ function HomePage() {
       <Grid container spacing="md">
         <Grid item cols={12}>
           <Box color='dark_gray' corners='roundest'>
-            <h2> My proficiencies include... </h2>
+            <h2> My proficiencies... </h2>
           </Box>
         </Grid>
       </Grid>
