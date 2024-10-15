@@ -27,44 +27,44 @@ function HomePage() {
 
       <Grid container spacing="md">
         <Grid item cols={6}>
-          <Box color='blue' corners='roundest'>
+          <Box color='gray' corners='roundest'>
             <h2> Cloud Infrastructure </h2>
             <p> AWS, Docker, Terraform, Ansible </p>
           </Box>
         </Grid>
         <Grid item cols={6}>
-          <Box color='gray' corners='roundest'>
-            <h2> Backend Development </h2>
-            <p> Cassandra, MySQL, PostgreSQL, DynamoDB, MongoDB, NodeJS </p>
+          <Box color='medium_gray' corners='roundest'>
+            <h2> Database Management </h2>
+            <p> PostgreSQL, Cassandra, MySQL, DynamoDB, MongoDB </p>
           </Box>
         </Grid>
       </Grid>
 
       <Grid container spacing="md">
         <Grid item cols={6}>
-          <Box color='gray' corners='roundest'>
-            <h2> Programming </h2>
+          <Box color='medium_gray' corners='roundest'>
+            <h2> Backend Development </h2>
             <p> Python, Go, Clojure, Bash </p>
           </Box>
         </Grid>
 
         <Grid item cols={6}>
-          <Box color='blue' corners='roundest'>
+          <Box color='gray' corners='roundest'>
             <h2> Continuous Integration & Delivery </h2>
-            <p> Concourse, CircleCI, Jenkins, Github Actions </p>
+            <p> Github Actions, Concourse, CircleCI, Jenkins </p>
           </Box>
         </Grid>
       </Grid>
 
       <Grid container spacing="md">
         <Grid item cols={6}>
-          <Box color='blue' corners='roundest'>
+          <Box color='gray' corners='roundest'>
             <h2> Test Automation </h2>
             <p> Python, Selenium, Gridlastic, Goss, JQuery </p>
           </Box>
         </Grid>
         <Grid item cols={6}>
-          <Box color='gray' corners='roundest'>
+          <Box color='medium_gray' corners='roundest'>
             <h2> Frontend Development </h2>
             <p> Typescript, React </p>
           </Box>
@@ -88,7 +88,7 @@ function HomePage() {
           <Box color="dark_gray" corners="rounder">
             <Grid container_gray spacing="md" >
               <Grid item cols={12}>
-                <Box color="blue" corners="rounder">
+                <Box color="medium_gray" corners="rounder">
                   <AboutContent />
                   <br />
                   <ContactContent />

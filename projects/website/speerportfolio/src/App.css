@@ -25,7 +25,7 @@
 }
 
 .App-header {
-    background-color: #463F3A;
+    background-color: #242424;
     min-height: 40vh;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@ a:hover {
 }
 
 a:active {
-  color: #463F3A;
+  color: #463F3Ao;
   background-color: transparent;
   text-decoration: underline;
 }
