@@ -26,7 +26,7 @@ function Professional() {
       <Grid container spacing="md">
         <Grid item cols={11}>
           <Box color='blue' corners='roundest'>
-            <h1 id="teksystems"> DevOps Engineer III at Comcast (contractor) </h1>
+            <h1 id="teksystems"> Software Engineer III at Comcast </h1>
             <p> Feb 2023 - Present </p>
           </Box>
         </Grid>
@@ -39,8 +39,7 @@ function Professional() {
           <Box color='gray' corners='rounder'>
             <h2> Summary </h2>
             <p>
-              I am currently working as a DevOps Engineer on the DevX team at Comcast.
-              My role is to support Comcast developers through the experimentation, building and maintaining of middleware API services.
+              I am currently a Platform Engineer at Comcast, supporting developers by building and maintaining middleware API services.
               Our small team follows Agile practices and has an "express everything as code" mentality which allows us to quickly build immutable, observable,
               and scalable infrastructure across hybrid cloud environments.
             </p>
@@ -58,7 +57,7 @@ function Professional() {
 	    that it served to get the latest data."
             />
             <ProjectBox
-              title="Cloud Agnostic Machine Images"
+              title="Baking Cloud Agnostic Machine Images"
               tools="Packer, Ansible, Concourse, Docker, VMware, and AWS (EC2, AMI)"
               description="I used Packer and Ansible to bake images for the individual components of a 3rd-party data service in order to run that service in a hybrid cloud environment.
 	    The application components (an API, data transformation logic, and event streams) ran on EC2 instances in AWS, while the storage layer ran on VMware virtual machines in an
