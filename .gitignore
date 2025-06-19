@@ -25,5 +25,6 @@ override.tf.json
 **/invalidation.json
 
 # Ignore hidden files in general
-
 **/.*
+!.github/
+!.gitignore
