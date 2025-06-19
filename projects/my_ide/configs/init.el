@@ -92,7 +92,7 @@
 ;; ;; _Typescript_
 ;; ;; followed https://willschenk.com/articles/2021/setting_up_emacs_for_typescript_development/
 
-;; ;; ts configuration leverages tide, company, and flycheck
+;; ts configuration leverages tide, company, and flycheck
 ;; (defun setup-tide-mode ()
 ;;   (interactive)
 ;;   (tide-setup)
@@ -142,7 +142,7 @@
  '(org-todo-keywords
    '((sequence "TODO" "IN_PROGRESS" "CONTINUED" "|" "DONE" "MEETING")))
  '(package-selected-packages
-   '(impatient-mode go-mode terraform-mode hcl-mode terraform-doc web-mode flycheck company tide markdown-mode tramp banner-comment projectile fireplace orgit dockerfile-mode cider clojure-mode org yaml-mode smex makdown-mode magit fixme-mode ag))
+   '(pandoc-mode lua-mode impatient-mode go-mode terraform-mode hcl-mode terraform-doc web-mode flycheck company tide markdown-mode tramp banner-comment projectile fireplace orgit dockerfile-mode cider clojure-mode org yaml-mode smex makdown-mode magit fixme-mode ag))
  '(search-default-mode 'char-fold-to-regexp)
  '(sentence-end-double-space nil)
  '(sh-basic-offset 2)

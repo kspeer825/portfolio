@@ -25,6 +25,28 @@ function Projects() {
       <Grid container spacing="md">
         <Grid item cols={10}>
           <PersonalProjectBox
+            title="Reverse Proxy"
+            subtitle="Kubernetes"
+            tools=" Terraform, AWS (VPC, ALB, ECS, Cloudwatch, IAM, EFS), Jenkins"
+            color="gray"
+            context="Jenkins is an open source orchestration tool for automation pipelines. It is traditionally run on servers with static IPs, however it can be run in a serverless environment. This implementation leverages ECS Fargate tasks and VPC endpoints making it a cost-effective, scalable, and secure."
+            children=<div>
+              <h3> Component Details:</h3>
+              <ul>
+                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/">Overview</a></li>
+                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/terraform/alb.tf">Application Load Balancer</a> accesible via white-listed IPs</li>
+                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/terraform/ecs.tf">ECS Cluster</a> running Fargate tasks in a private subnet</li>
+                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/terraform/vpc.tf">VPC</a> using AWS PrivateLink for service-to-service communication</li>
+                <li><a href="https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/terraform/ecr.tf">ECR</a> private repo for storing the <a href="https://github.com/kspeer825/portfolio/tree/main/projects/jenkins/jenkins/">Jenkins Docker image</a></li>
+              </ul >
+            </div >
+          />
+        </Grid >
+      </Grid >
+
+      <Grid container spacing="md">
+        <Grid item cols={10}>
+          <PersonalProjectBox
             title="Serverless CI/CD Platform"
             subtitle="Jenkins ECS Cluster"
             tools=" Terraform, AWS (VPC, ALB, ECS, Cloudwatch, IAM, EFS), Jenkins"
