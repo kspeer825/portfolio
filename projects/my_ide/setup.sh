@@ -33,6 +33,5 @@ sudo install minikube-darwin-$(uname -m) /usr/local/bin/minikube
 echo "⚙️  Installing browser..."
 brew install --cask brave-browser
 
-echo "To validate setup execute the following:
-  open iTerm.app
-  bash ~/git/portfolio-my_ide/projects/my_ide/setup_health.sh"
+echo "⚙️  Verifying dependencies..."
+source ./portfolio-my_ide/projects/my_ide/setup_health.sh
