@@ -26,7 +26,7 @@ brew install docker
 brew install docker-compose
 brew install colima
 brew install k9s
-brew instlal kubectl
+brew install kubectl
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-darwin-$(uname -m)
 sudo install minikube-darwin-$(uname-m) /usr/local/bin/minikube
 
@@ -35,4 +35,4 @@ brew install --cask brave-browser
 
 echo "To validate setup execute the following:
   open iTerm.app
-  ~/git/personal/portfolio/projects/my_ide/setup_health.sh"
+  bash ~/git/portfolio-my_ide/projects/my_ide/setup_health.sh"
