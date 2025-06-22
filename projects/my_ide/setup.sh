@@ -2,7 +2,7 @@
 
 echo "⚙️  Configuring zsh..."
 rm -f ~/.zshrc
-ln -s ~/git/personal/portfolio/projects/my_ide/configs/zshrc ~/.zshrc
+ln -s portfolio-my_ide/projects/my_ide/configs/zshrc ~/.zshrc
 
 echo "⚙️  Installing package manager for mac..."
 command -v brew >/dev/null 2>&1 || \
@@ -15,11 +15,11 @@ brew install --cask iterm2
 
 echo "⚙️  Installing and configuring an editor..."
 brew install emacs
-ln -s ~/git/personal/portfolio/projects/my_ide/configs/init.el ~/.emacs.d/init.el
+ln -s portfolio-my_ide/projects/my_ide/configs/init.el ~/.emacs.d/init.el
 
 echo "⚙️  Installing and configuring a terminal multiplexer..."
 brew install tmux
-ln -s ~/git/personal/portfolio/projects/my_ide/configs/tmux.conf ~/.tmux.conf
+ln -s portfolio-my_ide/projects/my_ide/configs/tmux.conf ~/.tmux.conf
 
 echo "⚙️  Installing various contianer tooling..."
 brew install docker
