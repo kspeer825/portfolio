@@ -1,14 +1,17 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Frontend stuff
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export N_PREFIX=$HOME/.n
+#alias node="$HOME/.n/bin/node"
 
 # Update PATH for the Google Cloud SDK.
-if [ -f '/Users/$USER/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/path.zsh.inc'; fi
+# if [ -f '/Users/kylespeer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kylespeer/google-cloud-sdk/path.zsh.inc'; fi
 
 # Enable shell command completion for gcloud.
-if [ -f '/Users/$USER/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/completion.zsh.inc'; fi
+# if [ -f '/Users/kylespeer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kylespeer/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Load pyenv and pyenv virtualenv-init
 export PYENV_ROOT="$HOME/.pyenv"
@@ -22,6 +25,8 @@ export PATH=$PATH:/Users/$USER/git/portfolio/projects/my_ide/scripts
 
 # Add go to path
 export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # Update primary prompt
 branch_if_exists() {
@@ -41,6 +46,8 @@ alias gs="sp && git status"
 alias ga="git add -p"
 alias gc="git commit -m"
 alias gl="git log"
+alias kc="kubectl"
+alias dc="docker compose"
 
 # autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
@@ -49,3 +56,14 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 #  (macports)
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
+
+# minikube
+export PATH=$PATH:/usr/local/bin/
+
+# kubectl autocomplete
+source <(kubectl completion zsh)
+fpath=(/opt/homebrew/share/zsh/site-functions /opt/homebrew/share/zsh/site-functions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.9/functions ~/.zsh/completion)
+export KUBE_EDITOR=emacs
+
+# brew needs to chill out
+HOMEBREW_NO_AUTO_UPDATE=1

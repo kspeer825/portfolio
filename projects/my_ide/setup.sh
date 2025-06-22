@@ -1,40 +1,38 @@
 #!/bin/bash
 
+echo "⚙️  Configuring zsh..."
+rm -f ~/.zshrc
+ln -s ~/git/personal/portfolio/projects/my_ide/configs/zshrc ~/.zshrc
 
-# Install package manager for mac
-
+echo "⚙️  Installing package manager for mac..."
 command -v brew >/dev/null 2>&1 || \
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$(whoami)/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Install a terminal
+echo "⚙️  Installing a terminal..."
 brew install --cask iterm2
-# Configure terminal
-# TODO
 
-# Install an editor
+echo "⚙️  Installing and configuring an editor..."
 brew install emacs
-# Configure editor
-# TODO
+ln -s ~/git/personal/portfolio/projects/my_ide/configs/init.el ~/.emacs.d/init.el
 
-# Install a multiplexer
+echo "⚙️  Installing and configuring a terminal multiplexer..."
 brew install tmux
-# Configure multiplexer
-# TODO
+ln -s ~/git/personal/portfolio/projects/my_ide/configs/tmux.conf ~/.tmux.conf
 
-# Install a global key-mapper
-brew install --cask karabiner-elements
-# Configure key-mapper
-# TODO
+echo "⚙️  Installing various contianer tooling..."
+brew install docker
+brew install docker-compose
+brew install colima
+brew install k9s
+brew instlal kubectl
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-darwin-$(uname -m)
+sudo install minikube-darwin-$(uname-m) /usr/local/bin/minikube
 
-# Install Brave
+echo "⚙️  Installing browser..."
 brew install --cask brave-browser
-# Configure browser
-# TODO
 
-
-# Ensure setup was successful
 echo "To validate setup execute the following:
   open iTerm.app
-  bash my_ide-main/setup_health.sh"
+  ~/git/personal/portfolio/projects/my_ide/setup_health.sh"
