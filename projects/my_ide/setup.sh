@@ -28,7 +28,7 @@ brew install colima
 brew install k9s
 brew install kubectl
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-darwin-$(uname -m)
-sudo install minikube-darwin-$(uname-m) /usr/local/bin/minikube
+sudo install minikube-darwin-$(uname -m) /usr/local/bin/minikube
 
 echo "⚙️  Installing browser..."
 brew install --cask brave-browser
