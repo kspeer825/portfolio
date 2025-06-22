@@ -23,9 +23,9 @@ command -v colima >/dev/null 2>&1 || echo "❌ colima is missing. "
 echo "✅ $(colima --version)"
 
 command -v k9s version >/dev/null 2>&1 || echo "❌ k9s is missing. "
-echo "✅ $(k9s version | grep -i version)"
+echo "✅ k9s $(k9s version | grep -i version)"
 
 command -v kubectl version >/dev/null 2>&1 || echo "❌ kubectl is missing. "
-echo "✅ $(kubectl version | grep -i client)"
+echo "✅ kubectul $(kubectl version | grep -i client)"
 
 echo "All Checks Passed."
