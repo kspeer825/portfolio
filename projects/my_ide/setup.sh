@@ -23,6 +23,10 @@ brew install tmux
 rm -f ~/.tmux.conf
 ln -s /Users/$USER/git/personal/portfolio-my_ide/projects/my_ide/configs/tmux.conf ~/.tmux.conf
 
+echo "⚙️  Installing aws cli..."
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /
+
 echo "⚙️  Installing various contianer tooling..."
 brew install docker
 brew install docker-compose
@@ -31,6 +35,9 @@ brew install k9s
 brew install kubectl
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-darwin-$(uname -m)
 sudo install minikube-darwin-$(uname -m) /usr/local/bin/minikube
+
+echo "⚙️  Installing browser..."
+brew install yarn
 
 echo "⚙️  Installing browser..."
 brew install --cask brave-browser

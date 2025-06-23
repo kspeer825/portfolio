@@ -15,6 +15,10 @@ echo "✅ $(emacs --version | head -1)"
 command -v tmux >/dev/null 2>&1 || echo "❌ tmux is missing. "
 echo "✅ $(tmux -V)"
 
+# aws
+command -v aws --version >/dev/null 2>&1 || echo "❌ aws-cli is missing. "
+echo "✅ AWS CLI: $(aws --version)"
+
 # container tools
 command -v docker --version >/dev/null 2>&1 || echo "❌ docker is missing. "
 echo "✅ $(docker --version)"
@@ -27,5 +31,10 @@ echo "✅ k9s $(k9s version | grep -i version)"
 
 command -v kubectl version >/dev/null 2>&1 || echo "❌ kubectl is missing. "
 echo "✅ kubectul $(kubectl version | grep -i client)"
+
+# yarn
+command -v yarn --version >/dev/null 2>&1 || echo "❌ yarn is missing. "
+echo "✅ yarn: $(yarn --version)"
+
 
 echo "All Checks Passed."
